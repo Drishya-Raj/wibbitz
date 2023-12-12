@@ -199,7 +199,6 @@ header .navigation .right .get-a-demo:hover {
   color: white;
 }
 .flex-wrapper .right-section {
-  width: 50%;
   position: relative;
 }
 .flex-wrapper .right-section .home-image {
@@ -209,13 +208,13 @@ header .navigation .right .get-a-demo:hover {
 .flex-wrapper .right-section .dotted-curve {
   width: 50px;
   position: absolute;
-  left: 160px;
+  left: 240px;
   top: -6px;
 }
 .flex-wrapper .right-section .play-button-home {
   background-color: #ff794b;
   position: absolute;
-  left: 210px;
+  left: 290px;
   top: -34px;
   border-radius: 50%;
   padding: 25px 30px;
@@ -259,12 +258,12 @@ header .navigation .right .get-a-demo:hover {
   width: 30%;
   gap: 30px;
 }
-.user-section .user1 .paint-logo {
+.user-section .user1 .paint-logo img {
   background-color: #ff794b;
-  width: 15%;
+  width: 10%;
   display: block;
   border-radius: 60%;
-  padding: 5px 10px;
+  padding: 8px;
 }
 .user-section .user1 h1 {
   font-weight: bold;
@@ -322,12 +321,12 @@ header .navigation .right .get-a-demo:hover {
   width: 30%;
   gap: 10px;
 }
-.user-section-two .user2 .light-logo {
+.user-section-two .user2 .light-logo img {
   background-color: #ffc836;
-  width: 18%;
+  width: 10%;
   display: block;
   border-radius: 60%;
-  padding: 8px 15px;
+  padding: 8px;
 }
 .user-section-two .user2 h1 {
   font-weight: bold;
@@ -384,12 +383,12 @@ header .navigation .right .get-a-demo:hover {
   width: 30%;
   gap: 30px;
 }
-.user-section-three .user3 .film-logo {
+.user-section-three .user3 .film-logo img {
   background-color: #3dd278;
-  width: 15%;
+  width: 10%;
   display: block;
   border-radius: 60%;
-  padding: 5px 10px;
+  padding: 10px;
 }
 .user-section-three .user3 h1 {
   font-weight: bold;
@@ -553,7 +552,7 @@ header .navigation .right .get-a-demo:hover {
   text-align: center;
 }
 .marketing .top-section h1 {
-  font-size: 35px;
+  font-size: 30px;
   font-weight: 700;
   margin: 0 auto;
   padding: 50px;
@@ -650,17 +649,18 @@ header .navigation .right .get-a-demo:hover {
 }
 .use-cases .middle-main li {
   width: 30%;
-  height: 650px;
+  height: 500px;
   border-radius: 8px;
   line-height: 2cm;
   background-color: #fef4d7;
   position: relative;
+  padding: 20px;
 }
 .use-cases .middle-main li .Learn-more {
   background-color: #ffc836;
   color: white;
   padding: 10px 5px;
-  width: 30%;
+  width: 50%;
   cursor: pointer;
   border-radius: 12px;
 }
@@ -671,7 +671,7 @@ header .navigation .right .get-a-demo:hover {
   background-color: #0056fb;
   color: white;
   padding: 10px 5px;
-  width: 30%;
+  width: 50%;
   cursor: pointer;
   border-radius: 12px;
 }
@@ -682,7 +682,7 @@ header .navigation .right .get-a-demo:hover {
   background-color: #ff794b;
   color: white;
   padding: 10px 5px;
-  width: 30%;
+  width: 50%;
   cursor: pointer;
   border-radius: 12px;
 }
@@ -690,9 +690,9 @@ header .navigation .right .get-a-demo:hover {
   display: block;
   width: 20%;
   background-color: white;
-  padding: 5px 5px;
+  padding: 5px;
   margin: 0 auto;
-  border-radius: 40%;
+  border-radius: 50%;
 }
 .use-cases .middle-main li h5 {
   font-size: 22px;
@@ -944,11 +944,11 @@ footer .left-section .top ul li a img {
 footer .left-section .bottom {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  align-items: center;
+  gap: 10px;
 }
 footer .left-section .bottom ul {
   display: flex;
-  width: 45%;
   justify-content: space-between;
   gap: 10px;
   line-height: 1cm;
@@ -957,7 +957,6 @@ footer .left-section .bottom ul li {
   display: block;
 }
 footer .right-section {
-  width: 60%;
   display: flex;
   justify-content: space-between;
 }
@@ -1033,34 +1032,8 @@ footer .right-section ul a img {
     width: unset;
     gap: 20px;
   }
-  .user-section .user1 .paint-logo,
-  .user-section .user1 .light-logo,
-  .user-section .user1 .film-logo,
-  .user-section .user2 .paint-logo,
-  .user-section .user2 .light-logo,
-  .user-section .user2 .film-logo,
-  .user-section .user3 .paint-logo,
-  .user-section .user3 .light-logo,
-  .user-section .user3 .film-logo,
-  .user-section-two .user1 .paint-logo,
-  .user-section-two .user1 .light-logo,
-  .user-section-two .user1 .film-logo,
-  .user-section-two .user2 .paint-logo,
-  .user-section-two .user2 .light-logo,
-  .user-section-two .user2 .film-logo,
-  .user-section-two .user3 .paint-logo,
-  .user-section-two .user3 .light-logo,
-  .user-section-two .user3 .film-logo,
-  .user-section-three .user1 .paint-logo,
-  .user-section-three .user1 .light-logo,
-  .user-section-three .user1 .film-logo,
-  .user-section-three .user2 .paint-logo,
-  .user-section-three .user2 .light-logo,
-  .user-section-three .user2 .film-logo,
-  .user-section-three .user3 .paint-logo,
-  .user-section-three .user3 .light-logo,
-  .user-section-three .user3 .film-logo {
-    width: 6%;
+  .promotion p {
+    width: 85%;
   }
   .promotion .promo-image h3 {
     font-size: 25px;
@@ -1095,6 +1068,16 @@ footer .right-section ul a img {
   body p {
     font-size: 14px;
   }
+  body .flex-wrapper .right-section .dotted-curve {
+    width: 50px;
+    position: absolute;
+    left: 220px;
+    top: -6px;
+  }
+  body .flex-wrapper .right-section .play-button-home {
+    left: 270px;
+    top: -45px;
+  }
   body header .navigation .left {
     display: none;
   }
@@ -1123,9 +1106,6 @@ footer .right-section ul a img {
     width: unset;
     gap: 20px;
   }
-  body .user-section-two .user2 .light-logo {
-    width: 6%;
-  }
   body .user-section-three .user3 {
     width: 80%;
     flex-direction: column;
@@ -1139,6 +1119,9 @@ footer .right-section ul a img {
   }
   body .user-section-three .user3 .film-logo {
     width: 6%;
+  }
+  body .promotion p {
+    width: 80%;
   }
   body .promotion .promo-image h3 {
     font-size: 32px;
@@ -1154,14 +1137,12 @@ footer .right-section ul a img {
   body .promotion .promo-image .images .third {
     width: 80%;
     background-size: cover;
-    height: 60vh;
     margin: 0 auto;
   }
   body .promotion .promo-image .images .first p,
   body .promotion .promo-image .images .second p,
   body .promotion .promo-image .images .third p {
     font-size: 20px;
-    top: 60vh;
   }
   body .promotion .bottom {
     padding: 17% 0%;
@@ -1238,19 +1219,27 @@ footer .right-section ul a img {
   body header .navigation .left {
     display: none;
   }
+  body .flex-wrapper {
+    flex-direction: column;
+    gap: 80px;
+  }
   body .flex-wrapper .left-section {
-    width: 40%;
+    width: 80%;
   }
   body .flex-wrapper .left-section h1 {
     font-size: 28px;
   }
+  body .flex-wrapper .left-section .textbox {
+    margin: 0 auto;
+  }
   body .flex-wrapper .right-section .play-button-home {
     top: -45px;
     left: 180px;
-    padding: 25px;
+    padding: 20px;
   }
   body .flex-wrapper .right-section .dotted-curve {
     left: 130px;
+    top: -20px;
   }
   body .spotlight h4 {
     font-size: 24px;
@@ -1321,36 +1310,6 @@ footer .right-section ul a img {
   body .user-section-three .user3 .user3-right {
     width: unset;
     gap: 20px;
-  }
-  body .user-section .user1 .paint-logo,
-  body .user-section .user1 .light-logo,
-  body .user-section .user1 .film-logo,
-  body .user-section .user2 .paint-logo,
-  body .user-section .user2 .light-logo,
-  body .user-section .user2 .film-logo,
-  body .user-section .user3 .paint-logo,
-  body .user-section .user3 .light-logo,
-  body .user-section .user3 .film-logo,
-  body .user-section-two .user1 .paint-logo,
-  body .user-section-two .user1 .light-logo,
-  body .user-section-two .user1 .film-logo,
-  body .user-section-two .user2 .paint-logo,
-  body .user-section-two .user2 .light-logo,
-  body .user-section-two .user2 .film-logo,
-  body .user-section-two .user3 .paint-logo,
-  body .user-section-two .user3 .light-logo,
-  body .user-section-two .user3 .film-logo,
-  body .user-section-three .user1 .paint-logo,
-  body .user-section-three .user1 .light-logo,
-  body .user-section-three .user1 .film-logo,
-  body .user-section-three .user2 .paint-logo,
-  body .user-section-three .user2 .light-logo,
-  body .user-section-three .user2 .film-logo,
-  body .user-section-three .user3 .paint-logo,
-  body .user-section-three .user3 .light-logo,
-  body .user-section-three .user3 .film-logo {
-    width: 10%;
-    padding: 15px 20px;
   }
   body .promotion .promo-image h3 {
     font-size: 32px;
@@ -1435,21 +1394,28 @@ footer .right-section ul a img {
     font-size: 20px;
   }
   body .flex-wrapper {
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 80px;
   }
   body .flex-wrapper .left-section {
-    width: 40%;
+    width: 80%;
   }
   body .flex-wrapper .left-section h1 {
     font-size: 26px;
   }
+  body .flex-wrapper .left-section .textbox {
+    margin: 0 auto;
+  }
+  body .flex-wrapper .right-section {
+    width: 80%;
+  }
   body .flex-wrapper .right-section .play-button-home {
+    left: 200px;
     top: -50px;
-    left: 150px;
     padding: 20px 25px;
   }
   body .flex-wrapper .right-section .dotted-curve {
-    left: 100px;
+    left: 150px;
     top: -10px;
   }
   body .user-section .user1,
@@ -1516,39 +1482,13 @@ footer .right-section ul a img {
     width: unset;
     gap: 20px;
   }
-  body .user-section .user1 .paint-logo,
-  body .user-section .user1 .light-logo,
-  body .user-section .user1 .film-logo,
-  body .user-section .user2 .paint-logo,
-  body .user-section .user2 .light-logo,
-  body .user-section .user2 .film-logo,
-  body .user-section .user3 .paint-logo,
-  body .user-section .user3 .light-logo,
-  body .user-section .user3 .film-logo,
-  body .user-section-two .user1 .paint-logo,
-  body .user-section-two .user1 .light-logo,
-  body .user-section-two .user1 .film-logo,
-  body .user-section-two .user2 .paint-logo,
-  body .user-section-two .user2 .light-logo,
-  body .user-section-two .user2 .film-logo,
-  body .user-section-two .user3 .paint-logo,
-  body .user-section-two .user3 .light-logo,
-  body .user-section-two .user3 .film-logo,
-  body .user-section-three .user1 .paint-logo,
-  body .user-section-three .user1 .light-logo,
-  body .user-section-three .user1 .film-logo,
-  body .user-section-three .user2 .paint-logo,
-  body .user-section-three .user2 .light-logo,
-  body .user-section-three .user2 .film-logo,
-  body .user-section-three .user3 .paint-logo,
-  body .user-section-three .user3 .light-logo,
-  body .user-section-three .user3 .film-logo {
-    width: 16%;
-    padding: 15px 26px;
+  body .promotion p {
+    width: 90%;
   }
   body .promotion .promo-image h3 {
-    font-size: 32px;
-    width: 50%;
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
     padding: 15px;
   }
   body .promotion .promo-image .images {
@@ -1606,8 +1546,6 @@ footer .right-section ul a img {
     margin-bottom: 65%;
   }
   body .use-cases .middle-main li .middle {
-    width: 65px;
-    height: 65px;
     padding: 15px;
   }
   body .use-cases .middle-main li:last-child .middle {
@@ -1676,20 +1614,30 @@ footer .right-section ul a img {
   body .spotlight h4 {
     font-size: 20px;
   }
+  body .flex-wrapper {
+    flex-direction: column;
+    gap: 80px;
+  }
   body .flex-wrapper .left-section {
-    width: 40%;
+    width: 80%;
+  }
+  body .flex-wrapper .left-section .textbox {
+    margin: 0 auto;
   }
   body .flex-wrapper .left-section h1 {
     font-size: 26px;
   }
+  body .flex-wrapper .right-section {
+    width: 80%;
+  }
   body .flex-wrapper .right-section .play-button-home {
-    left: 130px;
+    left: 170px;
     top: -50px;
-    padding: 10px 15px;
+    padding: 20px 25px;
   }
   body .flex-wrapper .right-section .dotted-curve {
-    left: 84px;
-    top: -28px;
+    left: 120px;
+    top: -20px;
   }
   body .promotion .promo-image h3 {
     font-size: 28px;
@@ -1706,7 +1654,6 @@ footer .right-section ul a img {
   body .promotion .promo-image .images .third {
     width: 80%;
     background-size: cover;
-    height: 60vh;
     margin: 0 auto;
   }
   body .promotion .promo-image .images .first p,
@@ -1780,35 +1727,6 @@ footer .right-section ul a img {
   body .user-section-three .user3 .user3-right {
     width: unset;
     gap: 20px;
-  }
-  body .user-section .user1 .paint-logo,
-  body .user-section .user1 .light-logo,
-  body .user-section .user1 .film-logo,
-  body .user-section .user2 .paint-logo,
-  body .user-section .user2 .light-logo,
-  body .user-section .user2 .film-logo,
-  body .user-section .user3 .paint-logo,
-  body .user-section .user3 .light-logo,
-  body .user-section .user3 .film-logo,
-  body .user-section-two .user1 .paint-logo,
-  body .user-section-two .user1 .light-logo,
-  body .user-section-two .user1 .film-logo,
-  body .user-section-two .user2 .paint-logo,
-  body .user-section-two .user2 .light-logo,
-  body .user-section-two .user2 .film-logo,
-  body .user-section-two .user3 .paint-logo,
-  body .user-section-two .user3 .light-logo,
-  body .user-section-two .user3 .film-logo,
-  body .user-section-three .user1 .paint-logo,
-  body .user-section-three .user1 .light-logo,
-  body .user-section-three .user1 .film-logo,
-  body .user-section-three .user2 .paint-logo,
-  body .user-section-three .user2 .light-logo,
-  body .user-section-three .user2 .film-logo,
-  body .user-section-three .user3 .paint-logo,
-  body .user-section-three .user3 .light-logo,
-  body .user-section-three .user3 .film-logo {
-    width: 6%;
   }
   body .marketing .top-section h1 {
     font-size: 28px;
@@ -1978,6 +1896,9 @@ footer .right-section ul a img {
     left: 84px;
     top: -28px;
   }
+  body .promotion p {
+    width: 95%;
+  }
   body .promotion .promo-image .image {
     height: 30px;
     width: 90px;
@@ -1991,8 +1912,9 @@ footer .right-section ul a img {
   }
   body .promotion .promo-image h3 {
     font-size: 28px;
-    width: 60%;
+    width: 100%;
     padding: 15px;
+    text-align: center;
   }
   body .promotion .promo-image .images {
     flex-direction: column;
@@ -2020,7 +1942,7 @@ footer .right-section ul a img {
     margin-bottom: 20px;
   }
   body .promotion .bottom ul li .image .photo {
-    width: 90%;
+    width: 100%;
     padding-top: 50px;
   }
   body .user-section .user1,
@@ -2087,35 +2009,6 @@ footer .right-section ul a img {
   body .user-section-three .user3 .user3-right {
     width: unset;
     gap: 20px;
-  }
-  body .user-section .user1 .paint-logo,
-  body .user-section .user1 .light-logo,
-  body .user-section .user1 .film-logo,
-  body .user-section .user2 .paint-logo,
-  body .user-section .user2 .light-logo,
-  body .user-section .user2 .film-logo,
-  body .user-section .user3 .paint-logo,
-  body .user-section .user3 .light-logo,
-  body .user-section .user3 .film-logo,
-  body .user-section-two .user1 .paint-logo,
-  body .user-section-two .user1 .light-logo,
-  body .user-section-two .user1 .film-logo,
-  body .user-section-two .user2 .paint-logo,
-  body .user-section-two .user2 .light-logo,
-  body .user-section-two .user2 .film-logo,
-  body .user-section-two .user3 .paint-logo,
-  body .user-section-two .user3 .light-logo,
-  body .user-section-two .user3 .film-logo,
-  body .user-section-three .user1 .paint-logo,
-  body .user-section-three .user1 .light-logo,
-  body .user-section-three .user1 .film-logo,
-  body .user-section-three .user2 .paint-logo,
-  body .user-section-three .user2 .light-logo,
-  body .user-section-three .user2 .film-logo,
-  body .user-section-three .user3 .paint-logo,
-  body .user-section-three .user3 .light-logo,
-  body .user-section-three .user3 .film-logo {
-    padding-right: 10px;
   }
   body .marketing .top-section h1 {
     font-size: 28px;
@@ -2252,7 +2145,6 @@ footer .right-section ul a img {
     width: 90%;
   }
   body footer .right-section {
-    width: 70%;
     gap: 10px;
     flex-wrap: wrap;
   }
@@ -2274,7 +2166,10 @@ footer .right-section ul a img {
     padding: 20px;
   }
   header .responsive ul .logobutton .imagebutton {
-    width: 120px;
+    width: 100px;
+  }
+  header .responsive .right-section .get-a-demo {
+    padding: 2px;
   }
   body p {
     font-size: 13px;
@@ -2396,34 +2291,8 @@ footer .right-section ul a img {
     width: unset;
     gap: 20px;
   }
-  body .user-section .user1 .paint-logo,
-  body .user-section .user1 .light-logo,
-  body .user-section .user1 .film-logo,
-  body .user-section .user2 .paint-logo,
-  body .user-section .user2 .light-logo,
-  body .user-section .user2 .film-logo,
-  body .user-section .user3 .paint-logo,
-  body .user-section .user3 .light-logo,
-  body .user-section .user3 .film-logo,
-  body .user-section-two .user1 .paint-logo,
-  body .user-section-two .user1 .light-logo,
-  body .user-section-two .user1 .film-logo,
-  body .user-section-two .user2 .paint-logo,
-  body .user-section-two .user2 .light-logo,
-  body .user-section-two .user2 .film-logo,
-  body .user-section-two .user3 .paint-logo,
-  body .user-section-two .user3 .light-logo,
-  body .user-section-two .user3 .film-logo,
-  body .user-section-three .user1 .paint-logo,
-  body .user-section-three .user1 .light-logo,
-  body .user-section-three .user1 .film-logo,
-  body .user-section-three .user2 .paint-logo,
-  body .user-section-three .user2 .light-logo,
-  body .user-section-three .user2 .film-logo,
-  body .user-section-three .user3 .paint-logo,
-  body .user-section-three .user3 .light-logo,
-  body .user-section-three .user3 .film-logo {
-    padding-right: 10px;
+  body .promotion p {
+    width: 95%;
   }
   body .promotion .promo-image .image {
     height: 30px;
@@ -2616,6 +2485,353 @@ footer .right-section ul a img {
   body footer .right-section {
     flex-wrap: wrap;
   }
+  body footer .right-section ul #login {
+    display: none;
+  }
+  body footer .right-section ul a {
+    font-size: 12px;
+  }
+  body footer .right-section ul h3 {
+    font-size: 12px;
+  }
+  body footer .right-section ul h4 {
+    font-size: 10px;
+    font-size: 400;
+  }
+}
+@media (min-width: 280px) and (max-width: 320px) {
+  header .navigation {
+    display: none;
+  }
+  header .responsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+  header .responsive ul .logobutton .imagebutton {
+    width: 100px;
+  }
+  header .responsive .right-section .get-a-demo {
+    padding: 2px;
+  }
+  body p {
+    font-size: 13px;
+  }
+  body h1 {
+    font-size: 20px;
+  }
+  body span {
+    font-size: 14px;
+  }
+  body .spotlight {
+    width: 90%;
+    margin: 0 auto;
+  }
+  body .spotlight .images {
+    flex-wrap: wrap;
+  }
+  body .spotlight h4 {
+    font-size: 20px;
+  }
+  body .spotlight h1 {
+    font-size: 22px;
+  }
+  body .flex-wrapper {
+    flex-direction: column;
+    gap: 70px;
+  }
+  body .flex-wrapper .left-section {
+    width: 85%;
+  }
+  body .flex-wrapper .left-section h1 {
+    font-size: 26px;
+  }
+  body .flex-wrapper .left-section .textbox {
+    width: unset;
+  }
+  body .flex-wrapper .right-section .play-button-home {
+    left: 130px;
+    top: -50px;
+    padding: 10px 15px;
+  }
+  body .flex-wrapper .right-section .dotted-curve {
+    left: 84px;
+    top: -28px;
+  }
+  body .user-section .user1,
+  body .user-section .user2,
+  body .user-section .user3,
+  body .user-section-two .user1,
+  body .user-section-two .user2,
+  body .user-section-two .user3,
+  body .user-section-three .user1,
+  body .user-section-three .user2,
+  body .user-section-three .user3 {
+    width: 80%;
+    flex-direction: column;
+  }
+  body .user-section .user1 .demo-image,
+  body .user-section .user2 .demo-image,
+  body .user-section .user3 .demo-image,
+  body .user-section-two .user1 .demo-image,
+  body .user-section-two .user2 .demo-image,
+  body .user-section-two .user3 .demo-image,
+  body .user-section-three .user1 .demo-image,
+  body .user-section-three .user2 .demo-image,
+  body .user-section-three .user3 .demo-image {
+    width: unset;
+  }
+  body .user-section .user1 .demo-image img,
+  body .user-section .user2 .demo-image img,
+  body .user-section .user3 .demo-image img,
+  body .user-section-two .user1 .demo-image img,
+  body .user-section-two .user2 .demo-image img,
+  body .user-section-two .user3 .demo-image img,
+  body .user-section-three .user1 .demo-image img,
+  body .user-section-three .user2 .demo-image img,
+  body .user-section-three .user3 .demo-image img {
+    display: block;
+    width: 100%;
+  }
+  body .user-section .user1 .demo-button,
+  body .user-section .user2 .demo-button,
+  body .user-section .user3 .demo-button,
+  body .user-section-two .user1 .demo-button,
+  body .user-section-two .user2 .demo-button,
+  body .user-section-two .user3 .demo-button,
+  body .user-section-three .user1 .demo-button,
+  body .user-section-three .user2 .demo-button,
+  body .user-section-three .user3 .demo-button {
+    width: 50%;
+  }
+  body .user-section .user1 .user-right,
+  body .user-section .user1 .user2-right,
+  body .user-section .user1 .user3-right,
+  body .user-section .user2 .user-right,
+  body .user-section .user2 .user2-right,
+  body .user-section .user2 .user3-right,
+  body .user-section .user3 .user-right,
+  body .user-section .user3 .user2-right,
+  body .user-section .user3 .user3-right,
+  body .user-section-two .user1 .user-right,
+  body .user-section-two .user1 .user2-right,
+  body .user-section-two .user1 .user3-right,
+  body .user-section-two .user2 .user-right,
+  body .user-section-two .user2 .user2-right,
+  body .user-section-two .user2 .user3-right,
+  body .user-section-two .user3 .user-right,
+  body .user-section-two .user3 .user2-right,
+  body .user-section-two .user3 .user3-right,
+  body .user-section-three .user1 .user-right,
+  body .user-section-three .user1 .user2-right,
+  body .user-section-three .user1 .user3-right,
+  body .user-section-three .user2 .user-right,
+  body .user-section-three .user2 .user2-right,
+  body .user-section-three .user2 .user3-right,
+  body .user-section-three .user3 .user-right,
+  body .user-section-three .user3 .user2-right,
+  body .user-section-three .user3 .user3-right {
+    width: unset;
+    gap: 20px;
+  }
+  body .promotion p {
+    width: 95%;
+  }
+  body .promotion .promo-image .image {
+    height: 30px;
+    width: 90px;
+  }
+  body .promotion .promo-image .image img {
+    width: 50px;
+    height: 20px;
+  }
+  body .promotion .promo-image .play-button {
+    padding: 12px 18px;
+  }
+  body .promotion .promo-image h3 {
+    font-size: 20px;
+    width: 80%;
+    padding: 15px;
+  }
+  body .promotion .promo-image .images {
+    flex-direction: column;
+    gap: 100px;
+  }
+  body .promotion .promo-image .images .first,
+  body .promotion .promo-image .images .second,
+  body .promotion .promo-image .images .third {
+    width: 80%;
+    background-size: cover;
+    height: 60vh;
+    margin: 0 auto;
+  }
+  body .promotion .promo-image .images .first p,
+  body .promotion .promo-image .images .second p,
+  body .promotion .promo-image .images .third p {
+    font-size: 16px;
+    top: 60vh;
+  }
+  body .promotion .bottom ul {
+    flex-wrap: wrap;
+  }
+  body .promotion .bottom ul li {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  body .promotion .bottom ul li .image .photo {
+    width: 90%;
+    padding-top: 50px;
+  }
+  body .promotion .bottom ul li .image .left {
+    width: 80px;
+    height: 40px;
+  }
+  body .marketing .top-section h1 {
+    font-size: 22px;
+    padding: 40px;
+  }
+  body .marketing .contents {
+    flex-direction: column;
+  }
+  body .marketing .contents .first-part-border,
+  body .marketing .contents .second-part-border,
+  body .marketing .contents .first-part {
+    border-bottom: 1px dashed grey;
+    border-right: unset;
+  }
+  body .marketing .contents h5 {
+    font-size: 18px;
+  }
+  body .marketing .bottom-section .bottom {
+    width: 80%;
+    flex-direction: column;
+  }
+  body .marketing .bottom-section .bottom .get-a-demo {
+    width: 55%;
+  }
+  body .use-cases .top-section {
+    width: 95%;
+  }
+  body .use-cases .top-section h3 {
+    font-size: 20px;
+    width: 100%;
+  }
+  body .use-cases .middle-main {
+    flex-wrap: wrap;
+  }
+  body .use-cases .middle-main li {
+    width: 100%;
+    margin-bottom: 65%;
+  }
+  body .use-cases .middle-main li .middle {
+    width: 65px;
+    height: 65px;
+    padding: 15px;
+    margin: 0 auto;
+    width: unset;
+  }
+  body .use-cases .middle-main li:last-child .middle {
+    padding: 24px 16px;
+    margin: 0 auto;
+    width: unset;
+  }
+  body .use-cases .middle-main li .image {
+    top: 365px;
+  }
+  body .use-cases .middle-main li .image img {
+    width: 70%;
+  }
+  body .use-cases .middle-main li .Learn-more {
+    width: 40%;
+  }
+  body .use-cases .middle-main li:first-child, body .use-cases .middle-main li:last-child {
+    padding: 20px;
+  }
+  body .use-cases .middle-main li:first-child .Learn-more, body .use-cases .middle-main li:last-child .Learn-more {
+    width: 40%;
+  }
+  body .use-cases .bottom-section h3 {
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0px;
+  }
+  body .use-cases .bottom-section ul {
+    flex-direction: column;
+  }
+  body .use-cases .bottom-section ul li {
+    width: 100%;
+    padding: 0% 15%;
+  }
+  body .use-cases .bottom-section .explore {
+    width: 75%;
+  }
+  body .contact {
+    margin: 0 auto;
+  }
+  body .contact h3 {
+    width: 90%;
+  }
+  body .contact .left .bottom ul {
+    width: 90%;
+  }
+  body .contact .left .logo {
+    flex-wrap: wrap;
+  }
+  body .contact .left .logo a {
+    width: 48%;
+    margin-bottom: 15px;
+  }
+  body .contact .wrapper {
+    flex-direction: column;
+    padding: 0% 5%;
+  }
+  body .contact .wrapper .left {
+    width: 90%;
+  }
+  body .contact .wrapper .left .top .dashed {
+    width: unset;
+  }
+  body .contact .wrapper .left .top h3 {
+    width: unset;
+  }
+  body .contact .wrapper .left .bottom ul {
+    gap: 30px;
+  }
+  body .contact .wrapper .left .bottom ul li img {
+    width: unset;
+  }
+  body .contact .wrapper .left .bottom .dashed {
+    width: unset;
+  }
+  body .contact .wrapper .right {
+    padding: 40px;
+  }
+  body .contact .wrapper .right form {
+    display: flex;
+    flex-direction: column;
+    padding: unset;
+  }
+  body .contact .wrapper .right .form-last {
+    padding: 10px 0px;
+    gap: 10px;
+  }
+  body footer {
+    flex-direction: column;
+    gap: 25px;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  body footer .left-section {
+    width: 90%;
+  }
+  body footer .right-section {
+    flex-wrap: wrap;
+  }
+  body footer .right-section ul #login {
+    display: none;
+  }
   body footer .right-section ul a {
     font-size: 12px;
   }
@@ -2712,9 +2928,6 @@ footer .right-section ul a img {
   header .user-section-two .user2 .user2-right {
     width: unset;
     gap: 20px;
-  }
-  header .user-section-two .user2 .light-logo {
-    width: 6%;
   }
   header .user-section-three .user3 {
     width: 80%;
@@ -2825,5 +3038,10 @@ footer .right-section ul a img {
   }
   .use-cases footer .right-section {
     width: 100%;
+  }
+}
+@media (min-width: 1441px) {
+  .promotion p {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */

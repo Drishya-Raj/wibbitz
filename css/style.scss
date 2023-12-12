@@ -222,7 +222,7 @@ header {
 	}
 
 	.right-section {
-		width: 50%;
+		// width: 50%;
 		position: relative;
 
 		.home-image {
@@ -231,10 +231,9 @@ header {
 		}
 
 		.dotted-curve {
-
 			width: 50px;
 			position: absolute;
-			left: 160px;
+			left: 240px;
 			top: -6px;
 		}
 
@@ -242,7 +241,7 @@ header {
 
 			background-color: #ff794b;
 			position: absolute;
-			left: 210px;
+			left: 290px;
 			top: -34px;
 			border-radius: 50%;
 			padding: 25px 30px;
@@ -302,11 +301,13 @@ header {
 		}
 
 		.paint-logo {
-			background-color: #ff794b;
-			width: 15%;
-			display: block;
-			border-radius: 60%;
-			padding: 5px 10px;
+			img {
+				background-color: #ff794b;
+				width: 10%;
+				display: block;
+				border-radius: 60%;
+				padding: 8px;
+			}
 		}
 
 		h1 {
@@ -378,11 +379,13 @@ header {
 		}
 
 		.light-logo {
-			background-color: #ffc836;
-			width: 18%;
-			display: block;
-			border-radius: 60%;
-			padding: 8px 15px;
+			img {
+				background-color: #ffc836;
+				width: 10%;
+				display: block;
+				border-radius: 60%;
+				padding: 8px;
+			}
 		}
 
 		h1 {
@@ -452,11 +455,13 @@ header {
 		}
 
 		.film-logo {
-			background-color: #3dd278;
-			width: 15%;
-			display: block;
-			border-radius: 60%;
-			padding: 5px 10px;
+			img {
+				background-color: #3dd278;
+				width: 10%;
+				display: block;
+				border-radius: 60%;
+				padding: 10px;
+			}
 		}
 
 		h1 {
@@ -534,7 +539,6 @@ header {
 		.second {
 			margin-right: 0px;
 			background: url(../images/review1.jpg) no-repeat center center;
-			;
 			border-radius: 8px;
 			width: 32%;
 			height: 350px;
@@ -677,7 +681,7 @@ header {
 		text-align: center;
 
 		h1 {
-			font-size: 35px;
+			font-size: 30px;
 			font-weight: 700;
 			margin: 0 auto;
 			padding: 50px;
@@ -798,18 +802,19 @@ header {
 
 		li {
 			width: 30%;
-			height: 650px;
+			height: 500px;
 			border-radius: 8px;
 			line-height: 2cm;
 			background-color: #fef4d7;
 			position: relative;
+			padding: 20px;
 
 			//middle 
 			.Learn-more {
 				background-color: #ffc836;
 				color: white;
 				padding: 10px 5px;
-				width: 30%;
+				width: 50%;
 				cursor: pointer;
 				border-radius: 12px;
 			}
@@ -821,7 +826,7 @@ header {
 					background-color: #0056fb;
 					color: white;
 					padding: 10px 5px;
-					width: 30%;
+					width: 50%;
 					cursor: pointer;
 					border-radius: 12px;
 				}
@@ -834,7 +839,7 @@ header {
 					background-color: #ff794b;
 					color: white;
 					padding: 10px 5px;
-					width: 30%;
+					width: 50%;
 					cursor: pointer;
 					border-radius: 12px;
 				}
@@ -847,9 +852,9 @@ header {
 					display: block;
 					width: 20%;
 					background-color: white;
-					padding: 5px 5px;
+					padding: 5px;
 					margin: 0 auto;
-					border-radius: 40%;
+					border-radius: 50%;
 				}
 
 			}
@@ -1184,11 +1189,12 @@ footer {
 		.bottom {
 			display: flex;
 			flex-wrap: wrap;
-			width: 50%;
+			align-items: center;
+			gap: 10px;
 
 			ul {
 				display: flex;
-				width: 45%;
+				// width: 45%;
 				justify-content: space-between;
 				gap: 10px;
 				line-height: 1cm;
@@ -1204,7 +1210,7 @@ footer {
 
 	//footer section right
 	.right-section {
-		width: 60%;
+		// width: 60%;
 		display: flex;
 		justify-content: space-between;
 
@@ -1263,16 +1269,14 @@ footer {
 				width: unset;
 				gap: 20px;
 			}
-
-			.paint-logo,
-			.light-logo,
-			.film-logo {
-				width: 6%
-			}
 		}
 	}
 
 	.promotion {
+		p {
+			width: 85%;
+		}
+
 		.promo-image {
 
 			h3 {
@@ -1324,6 +1328,22 @@ footer {
 		p {
 			font-size: 14px;
 		}
+
+		.flex-wrapper .right-section {
+			.dotted-curve {
+				width: 50px;
+				position: absolute;
+				left: 220px;
+				top: -6px;
+			}
+
+			.play-button-home {
+				left: 270px;
+				top: -45px;
+			}
+		}
+
+
 		header {
 			.navigation {
 				.left {
@@ -1369,10 +1389,6 @@ footer {
 					width: unset;
 					gap: 20px;
 				}
-
-				.light-logo {
-					width: 6%
-				}
 			}
 		}
 
@@ -1399,6 +1415,10 @@ footer {
 		}
 
 		.promotion {
+			p {
+				width: 80%;
+			}
+
 			.promo-image {
 
 				h3 {
@@ -1416,13 +1436,14 @@ footer {
 					.third {
 						width: 80%;
 						background-size: cover;
-						height: 60vh;
+						// height: 60vh;
 						margin: 0 auto;
 
 
 						p {
 							font-size: 20px;
-							top: 60vh;
+							// top: 60vh;
+
 						}
 					}
 				}
@@ -1561,12 +1582,17 @@ footer {
 
 		//spotlight-section
 		.flex-wrapper {
+			flex-direction: column;
+			gap: 80px;
 
 			.left-section {
-				width: 40%;
+				width: 80%;
 
 				h1 {
 					font-size: 28px;
+				}
+				.textbox{
+					margin: 0 auto;
 				}
 			}
 
@@ -1576,11 +1602,12 @@ footer {
 
 					top: -45px;
 					left: 180px;
-					padding: 25px;
+					padding: 20px;
 				}
 
 				.dotted-curve {
 					left: 130px;
+					top: -20px;
 				}
 
 			}
@@ -1623,12 +1650,7 @@ footer {
 					gap: 20px;
 				}
 
-				.paint-logo,
-				.light-logo,
-				.film-logo {
-					width: 10%;
-					padding: 15px 20px;
-				}
+
 			}
 		}
 
@@ -1763,25 +1785,32 @@ footer {
 		}
 
 		.flex-wrapper {
-			flex-wrap: wrap;
+			flex-direction: column;
+			gap: 80px;
 
 			.left-section {
-				width: 40%;
+				width: 80%;
 
 				h1 {
 					font-size: 26px;
 				}
+
+				.textbox {
+					margin: 0 auto;
+				}
 			}
 
 			.right-section {
+				width: 80%;
+
 				.play-button-home {
+					left: 200px;
 					top: -50px;
-					left: 150px;
 					padding: 20px 25px;
 				}
 
 				.dotted-curve {
-					left: 100px;
+					left: 150px;
 					top: -10px;
 				}
 			}
@@ -1813,22 +1842,21 @@ footer {
 					gap: 20px;
 				}
 
-				.paint-logo,
-				.light-logo,
-				.film-logo {
-					width: 16%;
-					padding: 15px 26px;
-				}
 			}
 		}
 
 		.promotion {
+			p {
+				width: 90%;
+			}
+
 			.promo-image {
 
 
 				h3 {
-					font-size: 32px;
-					width: 50%;
+					font-size: 28px;
+					text-align: center;
+					width: 100%;
 					padding: 15px;
 				}
 
@@ -1913,8 +1941,6 @@ footer {
 					margin-bottom: 65%;
 
 					.middle {
-						width: 65px;
-						height: 65px;
 						padding: 15px;
 					}
 
@@ -2021,9 +2047,15 @@ footer {
 		}
 
 		.flex-wrapper {
+			flex-direction: column;
+			gap: 80px;
 
 			.left-section {
-				width: 40%;
+				width: 80%;
+
+				.textbox {
+					margin: 0 auto;
+				}
 
 				h1 {
 					font-size: 26px;
@@ -2031,15 +2063,18 @@ footer {
 			}
 
 			.right-section {
+				width: 80%;
+
 				.play-button-home {
-					left: 130px;
+					left: 170px;
 					top: -50px;
-					padding: 10px 15px;
+					padding: 20px 25px;
 				}
 
 				.dotted-curve {
-					left: 84px;
-					top: -28px;
+					left: 120px;
+					top: -20px;
+				
 				}
 			}
 		}
@@ -2063,7 +2098,7 @@ footer {
 					.third {
 						width: 80%;
 						background-size: cover;
-						height: 60vh;
+						// height: 60vh;
 						margin: 0 auto;
 
 
@@ -2120,11 +2155,6 @@ footer {
 					gap: 20px;
 				}
 
-				.paint-logo,
-				.light-logo,
-				.film-logo {
-					width: 6%
-				}
 			}
 		}
 
@@ -2388,6 +2418,10 @@ footer {
 		}
 
 		.promotion {
+			p {
+				width: 95%;
+			}
+
 			.promo-image {
 				.image {
 					height: 30px;
@@ -2406,8 +2440,10 @@ footer {
 
 				h3 {
 					font-size: 28px;
-					width: 60%;
+					width: 100%;
 					padding: 15px;
+					text-align: center;
+
 				}
 
 				.images {
@@ -2442,7 +2478,7 @@ footer {
 						.image {
 
 							.photo {
-								width: 90%;
+								width: 100%;
 								padding-top: 50px;
 							}
 						}
@@ -2478,12 +2514,7 @@ footer {
 					gap: 20px;
 				}
 
-				.paint-logo,
-				.light-logo,
-				.film-logo {
 
-					padding-right: 10px;
-				}
 			}
 		}
 
@@ -2692,11 +2723,13 @@ footer {
 			}
 
 			.right-section {
-				width: 70%;
+				// width: 70%;
 				gap: 10px;
 				flex-wrap: wrap;
 
 				ul {
+
+
 					a {
 						font-size: 13px;
 					}
@@ -2726,12 +2759,17 @@ footer {
 			ul {
 				.logobutton {
 					.imagebutton {
-						width: 120px;
+						width: 100px;
 
 					}
-
 				}
 
+			}
+
+			.right-section {
+				.get-a-demo {
+					padding: 2px;
+				}
 			}
 		}
 	}
@@ -2784,6 +2822,8 @@ footer {
 			}
 
 			.right-section {
+
+				// width:100%;
 				.play-button-home {
 					left: 130px;
 					top: -50px;
@@ -2828,16 +2868,14 @@ footer {
 					gap: 20px;
 				}
 
-				.paint-logo,
-				.light-logo,
-				.film-logo {
-
-					padding-right: 10px;
-				}
 			}
 		}
 
 		.promotion {
+			p {
+				width: 95%;
+			}
+
 			.promo-image {
 				.image {
 					height: 30px;
@@ -3117,6 +3155,10 @@ footer {
 				flex-wrap: wrap;
 
 				ul {
+					#login {
+						display: none;
+					}
+
 					a {
 						font-size: 12px;
 					}
@@ -3135,7 +3177,438 @@ footer {
 	}
 }
 
-@media (min-width:280px) and (max-width:320px) {}
+@media (min-width:280px) and (max-width:320px) {
+	header {
+		.navigation {
+			display: none;
+		}
+
+		.responsive {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 20px;
+
+			ul {
+				.logobutton {
+					.imagebutton {
+						width: 100px;
+
+					}
+				}
+
+			}
+
+			.right-section {
+				.get-a-demo {
+					padding: 2px;
+				}
+			}
+		}
+	}
+
+	body {
+		p {
+			font-size: 13px;
+		}
+
+		h1 {
+			font-size: 20px;
+		}
+
+		span {
+			font-size: 14px;
+		}
+
+		.spotlight {
+			width: 90%;
+			margin: 0 auto;
+
+			.images {
+				flex-wrap: wrap;
+			}
+
+			h4 {
+				font-size: 20px;
+			}
+
+			h1 {
+				font-size: 22px;
+			}
+
+		}
+
+		.flex-wrapper {
+			flex-direction: column;
+			gap: 70px;
+
+			.left-section {
+				width: 85%;
+
+				h1 {
+					font-size: 26px;
+				}
+
+				.textbox {
+					width: unset;
+				}
+			}
+
+			.right-section {
+
+				// width:100%;
+				.play-button-home {
+					left: 130px;
+					top: -50px;
+					padding: 10px 15px;
+				}
+
+				.dotted-curve {
+					left: 84px;
+					top: -28px;
+				}
+			}
+		}
+
+		//user-section
+		.user-section,
+		.user-section-two,
+		.user-section-three {
+
+			.user1,
+			.user2,
+			.user3 {
+				width: 80%;
+				flex-direction: column;
+
+				.demo-image {
+					width: unset;
+
+					img {
+						display: block;
+						width: 100%;
+					}
+				}
+
+				.demo-button {
+					width: 50%;
+				}
+
+				.user-right,
+				.user2-right,
+				.user3-right {
+					width: unset;
+					gap: 20px;
+				}
+
+			}
+		}
+
+		.promotion {
+			p {
+				width: 95%;
+			}
+
+			.promo-image {
+				.image {
+					height: 30px;
+					width: 90px;
+
+					img {
+						width: 50px;
+						height: 20px;
+
+					}
+				}
+
+				.play-button {
+					padding: 12px 18px;
+				}
+
+				h3 {
+					font-size: 20px;
+					width: 80%;
+					padding: 15px;
+				}
+
+				.images {
+					flex-direction: column;
+					gap: 100px;
+
+					.first,
+					.second,
+					.third {
+						width: 80%;
+						background-size: cover;
+						height: 60vh;
+						margin: 0 auto;
+
+
+						p {
+							font-size: 16px;
+							top: 60vh;
+						}
+					}
+				}
+			}
+
+			.bottom {
+				ul {
+					flex-wrap: wrap;
+
+					li {
+						width: 100%;
+						margin-bottom: 20px;
+
+						.image {
+
+							.photo {
+								width: 90%;
+								padding-top: 50px;
+							}
+
+							.left {
+								width: 80px;
+								height: 40px;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		//marketing
+		.marketing {
+			.top-section {
+				h1 {
+					font-size: 22px;
+					padding: 40px;
+				}
+			}
+
+			.contents {
+				flex-direction: column;
+
+				.first-part-border,
+				.second-part-border,
+				.first-part {
+
+					border-bottom: 1px dashed grey;
+					border-right: unset;
+				}
+
+				h5 {
+					font-size: 18px;
+				}
+			}
+
+			.bottom-section {
+				.bottom {
+					width: 80%;
+					flex-direction: column;
+
+					.get-a-demo {
+						width: 55%;
+					}
+				}
+			}
+		}
+
+		//use cases
+		.use-cases {
+
+			.top-section {
+				width: 95%;
+
+				h3 {
+					font-size: 20px;
+					width: 100%;
+				}
+			}
+
+			.middle-main {
+				flex-wrap: wrap;
+
+				li {
+					width: 100%;
+					margin-bottom: 65%;
+
+					.middle {
+						width: 65px;
+						height: 65px;
+						padding: 15px;
+						margin: 0 auto;
+						width: unset;
+					}
+
+					&:last-child {
+						.middle {
+							padding: 24px 16px;
+							margin: 0 auto;
+							width: unset;
+						}
+					}
+
+					.image {
+						top: 365px;
+
+						img {
+							width: 70%;
+						}
+					}
+
+					.Learn-more {
+						width: 40%;
+					}
+
+					&:first-child,
+					&:last-child {
+						padding: 20px;
+
+						.Learn-more {
+							width: 40%;
+						}
+					}
+				}
+			}
+
+			.bottom-section {
+
+				h3 {
+					font-size: 20px;
+					margin: 0 auto;
+					text-align: center;
+					padding: 40px 0px;
+				}
+
+				ul {
+					flex-direction: column;
+
+					li {
+						width: 100%;
+						padding: 0% 15%;
+					}
+				}
+
+				.explore {
+					width: 75%;
+				}
+			}
+		}
+
+		//contact-section
+		.contact {
+			margin: 0 auto;
+
+			h3 {
+				width: 90%;
+			}
+
+			.left {
+				.bottom {
+					ul {
+						width: 90%;
+					}
+				}
+
+				.logo {
+					flex-wrap: wrap;
+
+					a {
+						width: 48%;
+						margin-bottom: 15px;
+					}
+				}
+			}
+
+			.wrapper {
+				flex-direction: column;
+				padding: 0% 5%;
+
+
+				.left {
+					width: 90%;
+
+					.top {
+						.dashed {
+							width: unset;
+						}
+
+						h3 {
+							width: unset;
+						}
+					}
+
+					.bottom {
+						ul {
+							gap: 30px;
+
+							li {
+								img {
+									width: unset;
+								}
+							}
+						}
+
+						.dashed {
+							width: unset;
+						}
+					}
+				}
+
+				.right {
+					padding: 40px;
+
+					form {
+						display: flex;
+						flex-direction: column;
+						padding: unset;
+					}
+
+					.form-last {
+						padding: 10px 0px;
+						gap: 10px;
+					}
+				}
+			}
+		}
+
+		//footer
+		footer {
+			flex-direction: column;
+			gap: 25px;
+			flex-wrap: wrap;
+			gap: 5px;
+
+			.left-section {
+				width: 90%;
+			}
+
+			.right-section {
+				flex-wrap: wrap;
+
+				ul {
+					#login {
+						display: none;
+					}
+
+					a {
+						font-size: 12px;
+					}
+
+					h3 {
+						font-size: 12px;
+					}
+
+					h4 {
+						font-size: 10px;
+						font-size: 400;
+					}
+				}
+			}
+		}
+	}
+}
 
 @media screen and (max-width: 990px) {
 
@@ -3255,9 +3728,6 @@ footer {
 					gap: 20px;
 				}
 
-				.light-logo {
-					width: 6%
-				}
 			}
 		}
 
@@ -3432,6 +3902,14 @@ footer {
 			.right-section {
 				width: 100%;
 			}
+		}
+	}
+}
+
+@media (min-width: 1441px) {
+	.promotion {
+		p {
+			width: 90%;
 		}
 	}
 }
