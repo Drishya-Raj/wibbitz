@@ -10,7 +10,8 @@
   box-sizing: border-box;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -27,7 +28,9 @@ body {
   font-weight: 500;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
@@ -124,8 +127,9 @@ br.clear {
 
 header .navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 20px;
 }
 header .navigation .logo-container {
   display: block;
@@ -137,9 +141,6 @@ header .navigation .left {
 header .navigation .left ul {
   display: flex;
   justify-content: space-between;
-}
-header .navigation .right {
-  width: 20%;
 }
 header .navigation .right ul {
   display: flex;
@@ -562,7 +563,8 @@ header .navigation .right .get-a-demo:hover {
   justify-content: space-around;
   gap: 50px;
 }
-.marketing .contents .first-part-border, .marketing .contents .first-part {
+.marketing .contents .first-part-border,
+.marketing .contents .first-part {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -573,7 +575,8 @@ header .navigation .right .get-a-demo:hover {
 .marketing .contents .first-part-border {
   border-right: 2px dotted darkslategray;
 }
-.marketing .contents .second-part-border, .marketing .contents .second-part {
+.marketing .contents .second-part-border,
+.marketing .contents .second-part {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -859,7 +862,8 @@ header .navigation .right .get-a-demo:hover {
   gap: 20px;
   padding: 20px;
 }
-.contact .right form input[type=text], .contact .right form select,
+.contact .right form input[type=text],
+.contact .right form select,
 .contact .right form label {
   width: 100%;
   padding: 10px;
@@ -975,19 +979,87 @@ footer .right-section ul a img {
 }
 
 @media (min-width: 1051px) and (max-width: 1280px) {
-  .user-section .user1, .user-section .user2, .user-section .user3, .user-section-two .user1, .user-section-two .user2, .user-section-two .user3, .user-section-three .user1, .user-section-three .user2, .user-section-three .user3 {
+  .user-section .user1,
+  .user-section .user2,
+  .user-section .user3,
+  .user-section-two .user1,
+  .user-section-two .user2,
+  .user-section-two .user3,
+  .user-section-three .user1,
+  .user-section-three .user2,
+  .user-section-three .user3 {
     width: 80%;
     flex-direction: column;
   }
-  .user-section .user1 .demo-image img, .user-section .user2 .demo-image img, .user-section .user3 .demo-image img, .user-section-two .user1 .demo-image img, .user-section-two .user2 .demo-image img, .user-section-two .user3 .demo-image img, .user-section-three .user1 .demo-image img, .user-section-three .user2 .demo-image img, .user-section-three .user3 .demo-image img {
+  .user-section .user1 .demo-image img,
+  .user-section .user2 .demo-image img,
+  .user-section .user3 .demo-image img,
+  .user-section-two .user1 .demo-image img,
+  .user-section-two .user2 .demo-image img,
+  .user-section-two .user3 .demo-image img,
+  .user-section-three .user1 .demo-image img,
+  .user-section-three .user2 .demo-image img,
+  .user-section-three .user3 .demo-image img {
     display: block;
     width: 100%;
   }
-  .user-section .user1 .user-right, .user-section .user1 .user2-right, .user-section .user1 .user3-right, .user-section .user2 .user-right, .user-section .user2 .user2-right, .user-section .user2 .user3-right, .user-section .user3 .user-right, .user-section .user3 .user2-right, .user-section .user3 .user3-right, .user-section-two .user1 .user-right, .user-section-two .user1 .user2-right, .user-section-two .user1 .user3-right, .user-section-two .user2 .user-right, .user-section-two .user2 .user2-right, .user-section-two .user2 .user3-right, .user-section-two .user3 .user-right, .user-section-two .user3 .user2-right, .user-section-two .user3 .user3-right, .user-section-three .user1 .user-right, .user-section-three .user1 .user2-right, .user-section-three .user1 .user3-right, .user-section-three .user2 .user-right, .user-section-three .user2 .user2-right, .user-section-three .user2 .user3-right, .user-section-three .user3 .user-right, .user-section-three .user3 .user2-right, .user-section-three .user3 .user3-right {
+  .user-section .user1 .user-right,
+  .user-section .user1 .user2-right,
+  .user-section .user1 .user3-right,
+  .user-section .user2 .user-right,
+  .user-section .user2 .user2-right,
+  .user-section .user2 .user3-right,
+  .user-section .user3 .user-right,
+  .user-section .user3 .user2-right,
+  .user-section .user3 .user3-right,
+  .user-section-two .user1 .user-right,
+  .user-section-two .user1 .user2-right,
+  .user-section-two .user1 .user3-right,
+  .user-section-two .user2 .user-right,
+  .user-section-two .user2 .user2-right,
+  .user-section-two .user2 .user3-right,
+  .user-section-two .user3 .user-right,
+  .user-section-two .user3 .user2-right,
+  .user-section-two .user3 .user3-right,
+  .user-section-three .user1 .user-right,
+  .user-section-three .user1 .user2-right,
+  .user-section-three .user1 .user3-right,
+  .user-section-three .user2 .user-right,
+  .user-section-three .user2 .user2-right,
+  .user-section-three .user2 .user3-right,
+  .user-section-three .user3 .user-right,
+  .user-section-three .user3 .user2-right,
+  .user-section-three .user3 .user3-right {
     width: unset;
     gap: 20px;
   }
-  .user-section .user1 .paint-logo, .user-section .user1 .light-logo, .user-section .user1 .film-logo, .user-section .user2 .paint-logo, .user-section .user2 .light-logo, .user-section .user2 .film-logo, .user-section .user3 .paint-logo, .user-section .user3 .light-logo, .user-section .user3 .film-logo, .user-section-two .user1 .paint-logo, .user-section-two .user1 .light-logo, .user-section-two .user1 .film-logo, .user-section-two .user2 .paint-logo, .user-section-two .user2 .light-logo, .user-section-two .user2 .film-logo, .user-section-two .user3 .paint-logo, .user-section-two .user3 .light-logo, .user-section-two .user3 .film-logo, .user-section-three .user1 .paint-logo, .user-section-three .user1 .light-logo, .user-section-three .user1 .film-logo, .user-section-three .user2 .paint-logo, .user-section-three .user2 .light-logo, .user-section-three .user2 .film-logo, .user-section-three .user3 .paint-logo, .user-section-three .user3 .light-logo, .user-section-three .user3 .film-logo {
+  .user-section .user1 .paint-logo,
+  .user-section .user1 .light-logo,
+  .user-section .user1 .film-logo,
+  .user-section .user2 .paint-logo,
+  .user-section .user2 .light-logo,
+  .user-section .user2 .film-logo,
+  .user-section .user3 .paint-logo,
+  .user-section .user3 .light-logo,
+  .user-section .user3 .film-logo,
+  .user-section-two .user1 .paint-logo,
+  .user-section-two .user1 .light-logo,
+  .user-section-two .user1 .film-logo,
+  .user-section-two .user2 .paint-logo,
+  .user-section-two .user2 .light-logo,
+  .user-section-two .user2 .film-logo,
+  .user-section-two .user3 .paint-logo,
+  .user-section-two .user3 .light-logo,
+  .user-section-two .user3 .film-logo,
+  .user-section-three .user1 .paint-logo,
+  .user-section-three .user1 .light-logo,
+  .user-section-three .user1 .film-logo,
+  .user-section-three .user2 .paint-logo,
+  .user-section-three .user2 .light-logo,
+  .user-section-three .user2 .film-logo,
+  .user-section-three .user3 .paint-logo,
+  .user-section-three .user3 .light-logo,
+  .user-section-three .user3 .film-logo {
     width: 6%;
   }
   .promotion .promo-image h3 {
@@ -995,11 +1067,15 @@ footer .right-section ul a img {
     width: 25%;
     padding: 15px;
   }
-  .promotion .promo-image .images .first, .promotion .promo-image .images .second, .promotion .promo-image .images .third {
+  .promotion .promo-image .images .first,
+  .promotion .promo-image .images .second,
+  .promotion .promo-image .images .third {
     width: 20%;
     background-size: cover;
   }
-  .promotion .promo-image .images .first p, .promotion .promo-image .images .second p, .promotion .promo-image .images .third p {
+  .promotion .promo-image .images .first p,
+  .promotion .promo-image .images .second p,
+  .promotion .promo-image .images .third p {
     font-size: 16px;
   }
   .promotion .bottom {
@@ -1018,6 +1094,9 @@ footer .right-section ul a img {
 @media (min-width: 981px) and (max-width: 1051px) {
   body p {
     font-size: 14px;
+  }
+  body header .navigation .left {
+    display: none;
   }
   body .user-section .user1 {
     width: 80%;
@@ -1070,13 +1149,17 @@ footer .right-section ul a img {
     flex-direction: column;
     gap: 100px;
   }
-  body .promotion .promo-image .images .first, body .promotion .promo-image .images .second, body .promotion .promo-image .images .third {
+  body .promotion .promo-image .images .first,
+  body .promotion .promo-image .images .second,
+  body .promotion .promo-image .images .third {
     width: 80%;
     background-size: cover;
     height: 60vh;
     margin: 0 auto;
   }
-  body .promotion .promo-image .images .first p, body .promotion .promo-image .images .second p, body .promotion .promo-image .images .third p {
+  body .promotion .promo-image .images .first p,
+  body .promotion .promo-image .images .second p,
+  body .promotion .promo-image .images .third p {
     font-size: 20px;
     top: 60vh;
   }
@@ -1132,7 +1215,7 @@ footer .right-section ul a img {
   }
   .contact .wrapper {
     flex-direction: column;
-    padding: 0% 5%;
+    padding: 0 5%;
   }
   .contact .wrapper .left {
     width: 90%;
@@ -1152,6 +1235,9 @@ footer .right-section ul a img {
   }
 }
 @media (min-width: 769px) and (max-width: 980px) {
+  body header .navigation .left {
+    display: none;
+  }
   body .flex-wrapper .left-section {
     width: 40%;
   }
@@ -1172,21 +1258,97 @@ footer .right-section ul a img {
   body .spotlight .images {
     flex-wrap: wrap;
   }
-  body .user-section .user1, body .user-section .user2, body .user-section .user3, body .user-section-two .user1, body .user-section-two .user2, body .user-section-two .user3, body .user-section-three .user1, body .user-section-three .user2, body .user-section-three .user3 {
+  body .user-section .user1,
+  body .user-section .user2,
+  body .user-section .user3,
+  body .user-section-two .user1,
+  body .user-section-two .user2,
+  body .user-section-two .user3,
+  body .user-section-three .user1,
+  body .user-section-three .user2,
+  body .user-section-three .user3 {
     width: 80%;
     flex-direction: column;
   }
-  body .user-section .user1 .demo-image, body .user-section .user2 .demo-image, body .user-section .user3 .demo-image, body .user-section-two .user1 .demo-image, body .user-section-two .user2 .demo-image, body .user-section-two .user3 .demo-image, body .user-section-three .user1 .demo-image, body .user-section-three .user2 .demo-image, body .user-section-three .user3 .demo-image {
+  body .user-section .user1 .demo-image,
+  body .user-section .user2 .demo-image,
+  body .user-section .user3 .demo-image,
+  body .user-section-two .user1 .demo-image,
+  body .user-section-two .user2 .demo-image,
+  body .user-section-two .user3 .demo-image,
+  body .user-section-three .user1 .demo-image,
+  body .user-section-three .user2 .demo-image,
+  body .user-section-three .user3 .demo-image {
     width: unset;
   }
-  body .user-section .user1 .demo-image img, body .user-section .user2 .demo-image img, body .user-section .user3 .demo-image img, body .user-section-two .user1 .demo-image img, body .user-section-two .user2 .demo-image img, body .user-section-two .user3 .demo-image img, body .user-section-three .user1 .demo-image img, body .user-section-three .user2 .demo-image img, body .user-section-three .user3 .demo-image img {
+  body .user-section .user1 .demo-image img,
+  body .user-section .user2 .demo-image img,
+  body .user-section .user3 .demo-image img,
+  body .user-section-two .user1 .demo-image img,
+  body .user-section-two .user2 .demo-image img,
+  body .user-section-two .user3 .demo-image img,
+  body .user-section-three .user1 .demo-image img,
+  body .user-section-three .user2 .demo-image img,
+  body .user-section-three .user3 .demo-image img {
     display: block;
   }
-  body .user-section .user1 .user-right, body .user-section .user1 .user2-right, body .user-section .user1 .user3-right, body .user-section .user2 .user-right, body .user-section .user2 .user2-right, body .user-section .user2 .user3-right, body .user-section .user3 .user-right, body .user-section .user3 .user2-right, body .user-section .user3 .user3-right, body .user-section-two .user1 .user-right, body .user-section-two .user1 .user2-right, body .user-section-two .user1 .user3-right, body .user-section-two .user2 .user-right, body .user-section-two .user2 .user2-right, body .user-section-two .user2 .user3-right, body .user-section-two .user3 .user-right, body .user-section-two .user3 .user2-right, body .user-section-two .user3 .user3-right, body .user-section-three .user1 .user-right, body .user-section-three .user1 .user2-right, body .user-section-three .user1 .user3-right, body .user-section-three .user2 .user-right, body .user-section-three .user2 .user2-right, body .user-section-three .user2 .user3-right, body .user-section-three .user3 .user-right, body .user-section-three .user3 .user2-right, body .user-section-three .user3 .user3-right {
+  body .user-section .user1 .user-right,
+  body .user-section .user1 .user2-right,
+  body .user-section .user1 .user3-right,
+  body .user-section .user2 .user-right,
+  body .user-section .user2 .user2-right,
+  body .user-section .user2 .user3-right,
+  body .user-section .user3 .user-right,
+  body .user-section .user3 .user2-right,
+  body .user-section .user3 .user3-right,
+  body .user-section-two .user1 .user-right,
+  body .user-section-two .user1 .user2-right,
+  body .user-section-two .user1 .user3-right,
+  body .user-section-two .user2 .user-right,
+  body .user-section-two .user2 .user2-right,
+  body .user-section-two .user2 .user3-right,
+  body .user-section-two .user3 .user-right,
+  body .user-section-two .user3 .user2-right,
+  body .user-section-two .user3 .user3-right,
+  body .user-section-three .user1 .user-right,
+  body .user-section-three .user1 .user2-right,
+  body .user-section-three .user1 .user3-right,
+  body .user-section-three .user2 .user-right,
+  body .user-section-three .user2 .user2-right,
+  body .user-section-three .user2 .user3-right,
+  body .user-section-three .user3 .user-right,
+  body .user-section-three .user3 .user2-right,
+  body .user-section-three .user3 .user3-right {
     width: unset;
     gap: 20px;
   }
-  body .user-section .user1 .paint-logo, body .user-section .user1 .light-logo, body .user-section .user1 .film-logo, body .user-section .user2 .paint-logo, body .user-section .user2 .light-logo, body .user-section .user2 .film-logo, body .user-section .user3 .paint-logo, body .user-section .user3 .light-logo, body .user-section .user3 .film-logo, body .user-section-two .user1 .paint-logo, body .user-section-two .user1 .light-logo, body .user-section-two .user1 .film-logo, body .user-section-two .user2 .paint-logo, body .user-section-two .user2 .light-logo, body .user-section-two .user2 .film-logo, body .user-section-two .user3 .paint-logo, body .user-section-two .user3 .light-logo, body .user-section-two .user3 .film-logo, body .user-section-three .user1 .paint-logo, body .user-section-three .user1 .light-logo, body .user-section-three .user1 .film-logo, body .user-section-three .user2 .paint-logo, body .user-section-three .user2 .light-logo, body .user-section-three .user2 .film-logo, body .user-section-three .user3 .paint-logo, body .user-section-three .user3 .light-logo, body .user-section-three .user3 .film-logo {
+  body .user-section .user1 .paint-logo,
+  body .user-section .user1 .light-logo,
+  body .user-section .user1 .film-logo,
+  body .user-section .user2 .paint-logo,
+  body .user-section .user2 .light-logo,
+  body .user-section .user2 .film-logo,
+  body .user-section .user3 .paint-logo,
+  body .user-section .user3 .light-logo,
+  body .user-section .user3 .film-logo,
+  body .user-section-two .user1 .paint-logo,
+  body .user-section-two .user1 .light-logo,
+  body .user-section-two .user1 .film-logo,
+  body .user-section-two .user2 .paint-logo,
+  body .user-section-two .user2 .light-logo,
+  body .user-section-two .user2 .film-logo,
+  body .user-section-two .user3 .paint-logo,
+  body .user-section-two .user3 .light-logo,
+  body .user-section-two .user3 .film-logo,
+  body .user-section-three .user1 .paint-logo,
+  body .user-section-three .user1 .light-logo,
+  body .user-section-three .user1 .film-logo,
+  body .user-section-three .user2 .paint-logo,
+  body .user-section-three .user2 .light-logo,
+  body .user-section-three .user2 .film-logo,
+  body .user-section-three .user3 .paint-logo,
+  body .user-section-three .user3 .light-logo,
+  body .user-section-three .user3 .film-logo {
     width: 10%;
     padding: 15px 20px;
   }
@@ -1199,13 +1361,17 @@ footer .right-section ul a img {
     flex-direction: column;
     gap: 100px;
   }
-  body .promotion .promo-image .images .first, body .promotion .promo-image .images .second, body .promotion .promo-image .images .third {
+  body .promotion .promo-image .images .first,
+  body .promotion .promo-image .images .second,
+  body .promotion .promo-image .images .third {
     width: 80%;
     background-size: cover;
     height: 60vh;
     margin: 0 auto;
   }
-  body .promotion .promo-image .images .first p, body .promotion .promo-image .images .second p, body .promotion .promo-image .images .third p {
+  body .promotion .promo-image .images .first p,
+  body .promotion .promo-image .images .second p,
+  body .promotion .promo-image .images .third p {
     font-size: 20px;
     top: 60vh;
   }
@@ -1268,6 +1434,9 @@ footer .right-section ul a img {
   body .spotlight h4 {
     font-size: 20px;
   }
+  body .flex-wrapper {
+    flex-wrap: wrap;
+  }
   body .flex-wrapper .left-section {
     width: 40%;
   }
@@ -1283,21 +1452,97 @@ footer .right-section ul a img {
     left: 100px;
     top: -10px;
   }
-  body .user-section .user1, body .user-section .user2, body .user-section .user3, body .user-section-two .user1, body .user-section-two .user2, body .user-section-two .user3, body .user-section-three .user1, body .user-section-three .user2, body .user-section-three .user3 {
+  body .user-section .user1,
+  body .user-section .user2,
+  body .user-section .user3,
+  body .user-section-two .user1,
+  body .user-section-two .user2,
+  body .user-section-two .user3,
+  body .user-section-three .user1,
+  body .user-section-three .user2,
+  body .user-section-three .user3 {
     width: 80%;
     flex-direction: column;
   }
-  body .user-section .user1 .demo-image, body .user-section .user2 .demo-image, body .user-section .user3 .demo-image, body .user-section-two .user1 .demo-image, body .user-section-two .user2 .demo-image, body .user-section-two .user3 .demo-image, body .user-section-three .user1 .demo-image, body .user-section-three .user2 .demo-image, body .user-section-three .user3 .demo-image {
+  body .user-section .user1 .demo-image,
+  body .user-section .user2 .demo-image,
+  body .user-section .user3 .demo-image,
+  body .user-section-two .user1 .demo-image,
+  body .user-section-two .user2 .demo-image,
+  body .user-section-two .user3 .demo-image,
+  body .user-section-three .user1 .demo-image,
+  body .user-section-three .user2 .demo-image,
+  body .user-section-three .user3 .demo-image {
     width: unset;
   }
-  body .user-section .user1 .demo-image img, body .user-section .user2 .demo-image img, body .user-section .user3 .demo-image img, body .user-section-two .user1 .demo-image img, body .user-section-two .user2 .demo-image img, body .user-section-two .user3 .demo-image img, body .user-section-three .user1 .demo-image img, body .user-section-three .user2 .demo-image img, body .user-section-three .user3 .demo-image img {
+  body .user-section .user1 .demo-image img,
+  body .user-section .user2 .demo-image img,
+  body .user-section .user3 .demo-image img,
+  body .user-section-two .user1 .demo-image img,
+  body .user-section-two .user2 .demo-image img,
+  body .user-section-two .user3 .demo-image img,
+  body .user-section-three .user1 .demo-image img,
+  body .user-section-three .user2 .demo-image img,
+  body .user-section-three .user3 .demo-image img {
     display: block;
   }
-  body .user-section .user1 .user-right, body .user-section .user1 .user2-right, body .user-section .user1 .user3-right, body .user-section .user2 .user-right, body .user-section .user2 .user2-right, body .user-section .user2 .user3-right, body .user-section .user3 .user-right, body .user-section .user3 .user2-right, body .user-section .user3 .user3-right, body .user-section-two .user1 .user-right, body .user-section-two .user1 .user2-right, body .user-section-two .user1 .user3-right, body .user-section-two .user2 .user-right, body .user-section-two .user2 .user2-right, body .user-section-two .user2 .user3-right, body .user-section-two .user3 .user-right, body .user-section-two .user3 .user2-right, body .user-section-two .user3 .user3-right, body .user-section-three .user1 .user-right, body .user-section-three .user1 .user2-right, body .user-section-three .user1 .user3-right, body .user-section-three .user2 .user-right, body .user-section-three .user2 .user2-right, body .user-section-three .user2 .user3-right, body .user-section-three .user3 .user-right, body .user-section-three .user3 .user2-right, body .user-section-three .user3 .user3-right {
+  body .user-section .user1 .user-right,
+  body .user-section .user1 .user2-right,
+  body .user-section .user1 .user3-right,
+  body .user-section .user2 .user-right,
+  body .user-section .user2 .user2-right,
+  body .user-section .user2 .user3-right,
+  body .user-section .user3 .user-right,
+  body .user-section .user3 .user2-right,
+  body .user-section .user3 .user3-right,
+  body .user-section-two .user1 .user-right,
+  body .user-section-two .user1 .user2-right,
+  body .user-section-two .user1 .user3-right,
+  body .user-section-two .user2 .user-right,
+  body .user-section-two .user2 .user2-right,
+  body .user-section-two .user2 .user3-right,
+  body .user-section-two .user3 .user-right,
+  body .user-section-two .user3 .user2-right,
+  body .user-section-two .user3 .user3-right,
+  body .user-section-three .user1 .user-right,
+  body .user-section-three .user1 .user2-right,
+  body .user-section-three .user1 .user3-right,
+  body .user-section-three .user2 .user-right,
+  body .user-section-three .user2 .user2-right,
+  body .user-section-three .user2 .user3-right,
+  body .user-section-three .user3 .user-right,
+  body .user-section-three .user3 .user2-right,
+  body .user-section-three .user3 .user3-right {
     width: unset;
     gap: 20px;
   }
-  body .user-section .user1 .paint-logo, body .user-section .user1 .light-logo, body .user-section .user1 .film-logo, body .user-section .user2 .paint-logo, body .user-section .user2 .light-logo, body .user-section .user2 .film-logo, body .user-section .user3 .paint-logo, body .user-section .user3 .light-logo, body .user-section .user3 .film-logo, body .user-section-two .user1 .paint-logo, body .user-section-two .user1 .light-logo, body .user-section-two .user1 .film-logo, body .user-section-two .user2 .paint-logo, body .user-section-two .user2 .light-logo, body .user-section-two .user2 .film-logo, body .user-section-two .user3 .paint-logo, body .user-section-two .user3 .light-logo, body .user-section-two .user3 .film-logo, body .user-section-three .user1 .paint-logo, body .user-section-three .user1 .light-logo, body .user-section-three .user1 .film-logo, body .user-section-three .user2 .paint-logo, body .user-section-three .user2 .light-logo, body .user-section-three .user2 .film-logo, body .user-section-three .user3 .paint-logo, body .user-section-three .user3 .light-logo, body .user-section-three .user3 .film-logo {
+  body .user-section .user1 .paint-logo,
+  body .user-section .user1 .light-logo,
+  body .user-section .user1 .film-logo,
+  body .user-section .user2 .paint-logo,
+  body .user-section .user2 .light-logo,
+  body .user-section .user2 .film-logo,
+  body .user-section .user3 .paint-logo,
+  body .user-section .user3 .light-logo,
+  body .user-section .user3 .film-logo,
+  body .user-section-two .user1 .paint-logo,
+  body .user-section-two .user1 .light-logo,
+  body .user-section-two .user1 .film-logo,
+  body .user-section-two .user2 .paint-logo,
+  body .user-section-two .user2 .light-logo,
+  body .user-section-two .user2 .film-logo,
+  body .user-section-two .user3 .paint-logo,
+  body .user-section-two .user3 .light-logo,
+  body .user-section-two .user3 .film-logo,
+  body .user-section-three .user1 .paint-logo,
+  body .user-section-three .user1 .light-logo,
+  body .user-section-three .user1 .film-logo,
+  body .user-section-three .user2 .paint-logo,
+  body .user-section-three .user2 .light-logo,
+  body .user-section-three .user2 .film-logo,
+  body .user-section-three .user3 .paint-logo,
+  body .user-section-three .user3 .light-logo,
+  body .user-section-three .user3 .film-logo {
     width: 16%;
     padding: 15px 26px;
   }
@@ -1310,13 +1555,17 @@ footer .right-section ul a img {
     flex-direction: column;
     gap: 100px;
   }
-  body .promotion .promo-image .images .first, body .promotion .promo-image .images .second, body .promotion .promo-image .images .third {
+  body .promotion .promo-image .images .first,
+  body .promotion .promo-image .images .second,
+  body .promotion .promo-image .images .third {
     width: 80%;
     background-size: cover;
     height: 60vh;
     margin: 0 auto;
   }
-  body .promotion .promo-image .images .first p, body .promotion .promo-image .images .second p, body .promotion .promo-image .images .third p {
+  body .promotion .promo-image .images .first p,
+  body .promotion .promo-image .images .second p,
+  body .promotion .promo-image .images .third p {
     font-size: 20px;
     top: 60vh;
   }
@@ -1334,7 +1583,8 @@ footer .right-section ul a img {
   body .marketing .contents {
     flex-direction: column;
   }
-  body .marketing .contents .first-part-border, body .marketing .contents .second-part-border {
+  body .marketing .contents .first-part-border,
+  body .marketing .contents .second-part-border {
     border-bottom: 1px dashed grey;
     border-right: unset;
   }
@@ -1451,13 +1701,17 @@ footer .right-section ul a img {
     flex-direction: column;
     gap: 100px;
   }
-  body .promotion .promo-image .images .first, body .promotion .promo-image .images .second, body .promotion .promo-image .images .third {
+  body .promotion .promo-image .images .first,
+  body .promotion .promo-image .images .second,
+  body .promotion .promo-image .images .third {
     width: 80%;
     background-size: cover;
     height: 60vh;
     margin: 0 auto;
   }
-  body .promotion .promo-image .images .first p, body .promotion .promo-image .images .second p, body .promotion .promo-image .images .third p {
+  body .promotion .promo-image .images .first p,
+  body .promotion .promo-image .images .second p,
+  body .promotion .promo-image .images .third p {
     font-size: 18px;
     top: 60vh;
   }
@@ -1473,19 +1727,87 @@ footer .right-section ul a img {
     margin: auto;
     padding-top: 40px;
   }
-  body .user-section .user1, body .user-section .user2, body .user-section .user3, body .user-section-two .user1, body .user-section-two .user2, body .user-section-two .user3, body .user-section-three .user1, body .user-section-three .user2, body .user-section-three .user3 {
+  body .user-section .user1,
+  body .user-section .user2,
+  body .user-section .user3,
+  body .user-section-two .user1,
+  body .user-section-two .user2,
+  body .user-section-two .user3,
+  body .user-section-three .user1,
+  body .user-section-three .user2,
+  body .user-section-three .user3 {
     width: 80%;
     flex-direction: column;
   }
-  body .user-section .user1 .demo-image img, body .user-section .user2 .demo-image img, body .user-section .user3 .demo-image img, body .user-section-two .user1 .demo-image img, body .user-section-two .user2 .demo-image img, body .user-section-two .user3 .demo-image img, body .user-section-three .user1 .demo-image img, body .user-section-three .user2 .demo-image img, body .user-section-three .user3 .demo-image img {
+  body .user-section .user1 .demo-image img,
+  body .user-section .user2 .demo-image img,
+  body .user-section .user3 .demo-image img,
+  body .user-section-two .user1 .demo-image img,
+  body .user-section-two .user2 .demo-image img,
+  body .user-section-two .user3 .demo-image img,
+  body .user-section-three .user1 .demo-image img,
+  body .user-section-three .user2 .demo-image img,
+  body .user-section-three .user3 .demo-image img {
     display: block;
     width: 100%;
   }
-  body .user-section .user1 .user-right, body .user-section .user1 .user2-right, body .user-section .user1 .user3-right, body .user-section .user2 .user-right, body .user-section .user2 .user2-right, body .user-section .user2 .user3-right, body .user-section .user3 .user-right, body .user-section .user3 .user2-right, body .user-section .user3 .user3-right, body .user-section-two .user1 .user-right, body .user-section-two .user1 .user2-right, body .user-section-two .user1 .user3-right, body .user-section-two .user2 .user-right, body .user-section-two .user2 .user2-right, body .user-section-two .user2 .user3-right, body .user-section-two .user3 .user-right, body .user-section-two .user3 .user2-right, body .user-section-two .user3 .user3-right, body .user-section-three .user1 .user-right, body .user-section-three .user1 .user2-right, body .user-section-three .user1 .user3-right, body .user-section-three .user2 .user-right, body .user-section-three .user2 .user2-right, body .user-section-three .user2 .user3-right, body .user-section-three .user3 .user-right, body .user-section-three .user3 .user2-right, body .user-section-three .user3 .user3-right {
+  body .user-section .user1 .user-right,
+  body .user-section .user1 .user2-right,
+  body .user-section .user1 .user3-right,
+  body .user-section .user2 .user-right,
+  body .user-section .user2 .user2-right,
+  body .user-section .user2 .user3-right,
+  body .user-section .user3 .user-right,
+  body .user-section .user3 .user2-right,
+  body .user-section .user3 .user3-right,
+  body .user-section-two .user1 .user-right,
+  body .user-section-two .user1 .user2-right,
+  body .user-section-two .user1 .user3-right,
+  body .user-section-two .user2 .user-right,
+  body .user-section-two .user2 .user2-right,
+  body .user-section-two .user2 .user3-right,
+  body .user-section-two .user3 .user-right,
+  body .user-section-two .user3 .user2-right,
+  body .user-section-two .user3 .user3-right,
+  body .user-section-three .user1 .user-right,
+  body .user-section-three .user1 .user2-right,
+  body .user-section-three .user1 .user3-right,
+  body .user-section-three .user2 .user-right,
+  body .user-section-three .user2 .user2-right,
+  body .user-section-three .user2 .user3-right,
+  body .user-section-three .user3 .user-right,
+  body .user-section-three .user3 .user2-right,
+  body .user-section-three .user3 .user3-right {
     width: unset;
     gap: 20px;
   }
-  body .user-section .user1 .paint-logo, body .user-section .user1 .light-logo, body .user-section .user1 .film-logo, body .user-section .user2 .paint-logo, body .user-section .user2 .light-logo, body .user-section .user2 .film-logo, body .user-section .user3 .paint-logo, body .user-section .user3 .light-logo, body .user-section .user3 .film-logo, body .user-section-two .user1 .paint-logo, body .user-section-two .user1 .light-logo, body .user-section-two .user1 .film-logo, body .user-section-two .user2 .paint-logo, body .user-section-two .user2 .light-logo, body .user-section-two .user2 .film-logo, body .user-section-two .user3 .paint-logo, body .user-section-two .user3 .light-logo, body .user-section-two .user3 .film-logo, body .user-section-three .user1 .paint-logo, body .user-section-three .user1 .light-logo, body .user-section-three .user1 .film-logo, body .user-section-three .user2 .paint-logo, body .user-section-three .user2 .light-logo, body .user-section-three .user2 .film-logo, body .user-section-three .user3 .paint-logo, body .user-section-three .user3 .light-logo, body .user-section-three .user3 .film-logo {
+  body .user-section .user1 .paint-logo,
+  body .user-section .user1 .light-logo,
+  body .user-section .user1 .film-logo,
+  body .user-section .user2 .paint-logo,
+  body .user-section .user2 .light-logo,
+  body .user-section .user2 .film-logo,
+  body .user-section .user3 .paint-logo,
+  body .user-section .user3 .light-logo,
+  body .user-section .user3 .film-logo,
+  body .user-section-two .user1 .paint-logo,
+  body .user-section-two .user1 .light-logo,
+  body .user-section-two .user1 .film-logo,
+  body .user-section-two .user2 .paint-logo,
+  body .user-section-two .user2 .light-logo,
+  body .user-section-two .user2 .film-logo,
+  body .user-section-two .user3 .paint-logo,
+  body .user-section-two .user3 .light-logo,
+  body .user-section-two .user3 .film-logo,
+  body .user-section-three .user1 .paint-logo,
+  body .user-section-three .user1 .light-logo,
+  body .user-section-three .user1 .film-logo,
+  body .user-section-three .user2 .paint-logo,
+  body .user-section-three .user2 .light-logo,
+  body .user-section-three .user2 .film-logo,
+  body .user-section-three .user3 .paint-logo,
+  body .user-section-three .user3 .light-logo,
+  body .user-section-three .user3 .film-logo {
     width: 6%;
   }
   body .marketing .top-section h1 {
@@ -1495,7 +1817,9 @@ footer .right-section ul a img {
   body .marketing .contents {
     flex-direction: column;
   }
-  body .marketing .contents .first-part-border, body .marketing .contents .second-part-border, body .marketing .contents .first-part {
+  body .marketing .contents .first-part-border,
+  body .marketing .contents .second-part-border,
+  body .marketing .contents .first-part {
     border-bottom: 1px dashed grey;
     border-right: unset;
   }
@@ -1620,7 +1944,7 @@ footer .right-section ul a img {
     padding: 20px;
   }
   header .responsive ul .logobutton .imagebutton {
-    width: 80px;
+    width: 120px;
   }
   body .spotlight {
     width: 90%;
@@ -1674,13 +1998,17 @@ footer .right-section ul a img {
     flex-direction: column;
     gap: 100px;
   }
-  body .promotion .promo-image .images .first, body .promotion .promo-image .images .second, body .promotion .promo-image .images .third {
+  body .promotion .promo-image .images .first,
+  body .promotion .promo-image .images .second,
+  body .promotion .promo-image .images .third {
     width: 80%;
     background-size: cover;
     height: 60vh;
     margin: 0 auto;
   }
-  body .promotion .promo-image .images .first p, body .promotion .promo-image .images .second p, body .promotion .promo-image .images .third p {
+  body .promotion .promo-image .images .first p,
+  body .promotion .promo-image .images .second p,
+  body .promotion .promo-image .images .third p {
     font-size: 16px;
     top: 60vh;
   }
@@ -1695,22 +2023,98 @@ footer .right-section ul a img {
     width: 90%;
     padding-top: 50px;
   }
-  body .user-section .user1, body .user-section .user2, body .user-section .user3, body .user-section-two .user1, body .user-section-two .user2, body .user-section-two .user3, body .user-section-three .user1, body .user-section-three .user2, body .user-section-three .user3 {
+  body .user-section .user1,
+  body .user-section .user2,
+  body .user-section .user3,
+  body .user-section-two .user1,
+  body .user-section-two .user2,
+  body .user-section-two .user3,
+  body .user-section-three .user1,
+  body .user-section-three .user2,
+  body .user-section-three .user3 {
     width: 80%;
     flex-direction: column;
   }
-  body .user-section .user1 .demo-image, body .user-section .user2 .demo-image, body .user-section .user3 .demo-image, body .user-section-two .user1 .demo-image, body .user-section-two .user2 .demo-image, body .user-section-two .user3 .demo-image, body .user-section-three .user1 .demo-image, body .user-section-three .user2 .demo-image, body .user-section-three .user3 .demo-image {
+  body .user-section .user1 .demo-image,
+  body .user-section .user2 .demo-image,
+  body .user-section .user3 .demo-image,
+  body .user-section-two .user1 .demo-image,
+  body .user-section-two .user2 .demo-image,
+  body .user-section-two .user3 .demo-image,
+  body .user-section-three .user1 .demo-image,
+  body .user-section-three .user2 .demo-image,
+  body .user-section-three .user3 .demo-image {
     width: unset;
   }
-  body .user-section .user1 .demo-image img, body .user-section .user2 .demo-image img, body .user-section .user3 .demo-image img, body .user-section-two .user1 .demo-image img, body .user-section-two .user2 .demo-image img, body .user-section-two .user3 .demo-image img, body .user-section-three .user1 .demo-image img, body .user-section-three .user2 .demo-image img, body .user-section-three .user3 .demo-image img {
+  body .user-section .user1 .demo-image img,
+  body .user-section .user2 .demo-image img,
+  body .user-section .user3 .demo-image img,
+  body .user-section-two .user1 .demo-image img,
+  body .user-section-two .user2 .demo-image img,
+  body .user-section-two .user3 .demo-image img,
+  body .user-section-three .user1 .demo-image img,
+  body .user-section-three .user2 .demo-image img,
+  body .user-section-three .user3 .demo-image img {
     display: block;
     width: 100%;
   }
-  body .user-section .user1 .user-right, body .user-section .user1 .user2-right, body .user-section .user1 .user3-right, body .user-section .user2 .user-right, body .user-section .user2 .user2-right, body .user-section .user2 .user3-right, body .user-section .user3 .user-right, body .user-section .user3 .user2-right, body .user-section .user3 .user3-right, body .user-section-two .user1 .user-right, body .user-section-two .user1 .user2-right, body .user-section-two .user1 .user3-right, body .user-section-two .user2 .user-right, body .user-section-two .user2 .user2-right, body .user-section-two .user2 .user3-right, body .user-section-two .user3 .user-right, body .user-section-two .user3 .user2-right, body .user-section-two .user3 .user3-right, body .user-section-three .user1 .user-right, body .user-section-three .user1 .user2-right, body .user-section-three .user1 .user3-right, body .user-section-three .user2 .user-right, body .user-section-three .user2 .user2-right, body .user-section-three .user2 .user3-right, body .user-section-three .user3 .user-right, body .user-section-three .user3 .user2-right, body .user-section-three .user3 .user3-right {
+  body .user-section .user1 .user-right,
+  body .user-section .user1 .user2-right,
+  body .user-section .user1 .user3-right,
+  body .user-section .user2 .user-right,
+  body .user-section .user2 .user2-right,
+  body .user-section .user2 .user3-right,
+  body .user-section .user3 .user-right,
+  body .user-section .user3 .user2-right,
+  body .user-section .user3 .user3-right,
+  body .user-section-two .user1 .user-right,
+  body .user-section-two .user1 .user2-right,
+  body .user-section-two .user1 .user3-right,
+  body .user-section-two .user2 .user-right,
+  body .user-section-two .user2 .user2-right,
+  body .user-section-two .user2 .user3-right,
+  body .user-section-two .user3 .user-right,
+  body .user-section-two .user3 .user2-right,
+  body .user-section-two .user3 .user3-right,
+  body .user-section-three .user1 .user-right,
+  body .user-section-three .user1 .user2-right,
+  body .user-section-three .user1 .user3-right,
+  body .user-section-three .user2 .user-right,
+  body .user-section-three .user2 .user2-right,
+  body .user-section-three .user2 .user3-right,
+  body .user-section-three .user3 .user-right,
+  body .user-section-three .user3 .user2-right,
+  body .user-section-three .user3 .user3-right {
     width: unset;
     gap: 20px;
   }
-  body .user-section .user1 .paint-logo, body .user-section .user1 .light-logo, body .user-section .user1 .film-logo, body .user-section .user2 .paint-logo, body .user-section .user2 .light-logo, body .user-section .user2 .film-logo, body .user-section .user3 .paint-logo, body .user-section .user3 .light-logo, body .user-section .user3 .film-logo, body .user-section-two .user1 .paint-logo, body .user-section-two .user1 .light-logo, body .user-section-two .user1 .film-logo, body .user-section-two .user2 .paint-logo, body .user-section-two .user2 .light-logo, body .user-section-two .user2 .film-logo, body .user-section-two .user3 .paint-logo, body .user-section-two .user3 .light-logo, body .user-section-two .user3 .film-logo, body .user-section-three .user1 .paint-logo, body .user-section-three .user1 .light-logo, body .user-section-three .user1 .film-logo, body .user-section-three .user2 .paint-logo, body .user-section-three .user2 .light-logo, body .user-section-three .user2 .film-logo, body .user-section-three .user3 .paint-logo, body .user-section-three .user3 .light-logo, body .user-section-three .user3 .film-logo {
+  body .user-section .user1 .paint-logo,
+  body .user-section .user1 .light-logo,
+  body .user-section .user1 .film-logo,
+  body .user-section .user2 .paint-logo,
+  body .user-section .user2 .light-logo,
+  body .user-section .user2 .film-logo,
+  body .user-section .user3 .paint-logo,
+  body .user-section .user3 .light-logo,
+  body .user-section .user3 .film-logo,
+  body .user-section-two .user1 .paint-logo,
+  body .user-section-two .user1 .light-logo,
+  body .user-section-two .user1 .film-logo,
+  body .user-section-two .user2 .paint-logo,
+  body .user-section-two .user2 .light-logo,
+  body .user-section-two .user2 .film-logo,
+  body .user-section-two .user3 .paint-logo,
+  body .user-section-two .user3 .light-logo,
+  body .user-section-two .user3 .film-logo,
+  body .user-section-three .user1 .paint-logo,
+  body .user-section-three .user1 .light-logo,
+  body .user-section-three .user1 .film-logo,
+  body .user-section-three .user2 .paint-logo,
+  body .user-section-three .user2 .light-logo,
+  body .user-section-three .user2 .film-logo,
+  body .user-section-three .user3 .paint-logo,
+  body .user-section-three .user3 .light-logo,
+  body .user-section-three .user3 .film-logo {
     padding-right: 10px;
   }
   body .marketing .top-section h1 {
@@ -1720,7 +2124,9 @@ footer .right-section ul a img {
   body .marketing .contents {
     flex-direction: column;
   }
-  body .marketing .contents .first-part-border, body .marketing .contents .second-part-border, body .marketing .contents .first-part {
+  body .marketing .contents .first-part-border,
+  body .marketing .contents .second-part-border,
+  body .marketing .contents .first-part {
     border-bottom: 1px dashed grey;
     border-right: unset;
   }
@@ -1868,7 +2274,7 @@ footer .right-section ul a img {
     padding: 20px;
   }
   header .responsive ul .logobutton .imagebutton {
-    width: 80px;
+    width: 120px;
   }
   body p {
     font-size: 13px;
@@ -1914,25 +2320,109 @@ footer .right-section ul a img {
     left: 84px;
     top: -28px;
   }
-  body .user-section .user1, body .user-section .user2, body .user-section .user3, body .user-section-two .user1, body .user-section-two .user2, body .user-section-two .user3, body .user-section-three .user1, body .user-section-three .user2, body .user-section-three .user3 {
+  body .user-section .user1,
+  body .user-section .user2,
+  body .user-section .user3,
+  body .user-section-two .user1,
+  body .user-section-two .user2,
+  body .user-section-two .user3,
+  body .user-section-three .user1,
+  body .user-section-three .user2,
+  body .user-section-three .user3 {
     width: 80%;
     flex-direction: column;
   }
-  body .user-section .user1 .demo-image, body .user-section .user2 .demo-image, body .user-section .user3 .demo-image, body .user-section-two .user1 .demo-image, body .user-section-two .user2 .demo-image, body .user-section-two .user3 .demo-image, body .user-section-three .user1 .demo-image, body .user-section-three .user2 .demo-image, body .user-section-three .user3 .demo-image {
+  body .user-section .user1 .demo-image,
+  body .user-section .user2 .demo-image,
+  body .user-section .user3 .demo-image,
+  body .user-section-two .user1 .demo-image,
+  body .user-section-two .user2 .demo-image,
+  body .user-section-two .user3 .demo-image,
+  body .user-section-three .user1 .demo-image,
+  body .user-section-three .user2 .demo-image,
+  body .user-section-three .user3 .demo-image {
     width: unset;
   }
-  body .user-section .user1 .demo-image img, body .user-section .user2 .demo-image img, body .user-section .user3 .demo-image img, body .user-section-two .user1 .demo-image img, body .user-section-two .user2 .demo-image img, body .user-section-two .user3 .demo-image img, body .user-section-three .user1 .demo-image img, body .user-section-three .user2 .demo-image img, body .user-section-three .user3 .demo-image img {
+  body .user-section .user1 .demo-image img,
+  body .user-section .user2 .demo-image img,
+  body .user-section .user3 .demo-image img,
+  body .user-section-two .user1 .demo-image img,
+  body .user-section-two .user2 .demo-image img,
+  body .user-section-two .user3 .demo-image img,
+  body .user-section-three .user1 .demo-image img,
+  body .user-section-three .user2 .demo-image img,
+  body .user-section-three .user3 .demo-image img {
     display: block;
     width: 100%;
   }
-  body .user-section .user1 .demo-button, body .user-section .user2 .demo-button, body .user-section .user3 .demo-button, body .user-section-two .user1 .demo-button, body .user-section-two .user2 .demo-button, body .user-section-two .user3 .demo-button, body .user-section-three .user1 .demo-button, body .user-section-three .user2 .demo-button, body .user-section-three .user3 .demo-button {
+  body .user-section .user1 .demo-button,
+  body .user-section .user2 .demo-button,
+  body .user-section .user3 .demo-button,
+  body .user-section-two .user1 .demo-button,
+  body .user-section-two .user2 .demo-button,
+  body .user-section-two .user3 .demo-button,
+  body .user-section-three .user1 .demo-button,
+  body .user-section-three .user2 .demo-button,
+  body .user-section-three .user3 .demo-button {
     width: 50%;
   }
-  body .user-section .user1 .user-right, body .user-section .user1 .user2-right, body .user-section .user1 .user3-right, body .user-section .user2 .user-right, body .user-section .user2 .user2-right, body .user-section .user2 .user3-right, body .user-section .user3 .user-right, body .user-section .user3 .user2-right, body .user-section .user3 .user3-right, body .user-section-two .user1 .user-right, body .user-section-two .user1 .user2-right, body .user-section-two .user1 .user3-right, body .user-section-two .user2 .user-right, body .user-section-two .user2 .user2-right, body .user-section-two .user2 .user3-right, body .user-section-two .user3 .user-right, body .user-section-two .user3 .user2-right, body .user-section-two .user3 .user3-right, body .user-section-three .user1 .user-right, body .user-section-three .user1 .user2-right, body .user-section-three .user1 .user3-right, body .user-section-three .user2 .user-right, body .user-section-three .user2 .user2-right, body .user-section-three .user2 .user3-right, body .user-section-three .user3 .user-right, body .user-section-three .user3 .user2-right, body .user-section-three .user3 .user3-right {
+  body .user-section .user1 .user-right,
+  body .user-section .user1 .user2-right,
+  body .user-section .user1 .user3-right,
+  body .user-section .user2 .user-right,
+  body .user-section .user2 .user2-right,
+  body .user-section .user2 .user3-right,
+  body .user-section .user3 .user-right,
+  body .user-section .user3 .user2-right,
+  body .user-section .user3 .user3-right,
+  body .user-section-two .user1 .user-right,
+  body .user-section-two .user1 .user2-right,
+  body .user-section-two .user1 .user3-right,
+  body .user-section-two .user2 .user-right,
+  body .user-section-two .user2 .user2-right,
+  body .user-section-two .user2 .user3-right,
+  body .user-section-two .user3 .user-right,
+  body .user-section-two .user3 .user2-right,
+  body .user-section-two .user3 .user3-right,
+  body .user-section-three .user1 .user-right,
+  body .user-section-three .user1 .user2-right,
+  body .user-section-three .user1 .user3-right,
+  body .user-section-three .user2 .user-right,
+  body .user-section-three .user2 .user2-right,
+  body .user-section-three .user2 .user3-right,
+  body .user-section-three .user3 .user-right,
+  body .user-section-three .user3 .user2-right,
+  body .user-section-three .user3 .user3-right {
     width: unset;
     gap: 20px;
   }
-  body .user-section .user1 .paint-logo, body .user-section .user1 .light-logo, body .user-section .user1 .film-logo, body .user-section .user2 .paint-logo, body .user-section .user2 .light-logo, body .user-section .user2 .film-logo, body .user-section .user3 .paint-logo, body .user-section .user3 .light-logo, body .user-section .user3 .film-logo, body .user-section-two .user1 .paint-logo, body .user-section-two .user1 .light-logo, body .user-section-two .user1 .film-logo, body .user-section-two .user2 .paint-logo, body .user-section-two .user2 .light-logo, body .user-section-two .user2 .film-logo, body .user-section-two .user3 .paint-logo, body .user-section-two .user3 .light-logo, body .user-section-two .user3 .film-logo, body .user-section-three .user1 .paint-logo, body .user-section-three .user1 .light-logo, body .user-section-three .user1 .film-logo, body .user-section-three .user2 .paint-logo, body .user-section-three .user2 .light-logo, body .user-section-three .user2 .film-logo, body .user-section-three .user3 .paint-logo, body .user-section-three .user3 .light-logo, body .user-section-three .user3 .film-logo {
+  body .user-section .user1 .paint-logo,
+  body .user-section .user1 .light-logo,
+  body .user-section .user1 .film-logo,
+  body .user-section .user2 .paint-logo,
+  body .user-section .user2 .light-logo,
+  body .user-section .user2 .film-logo,
+  body .user-section .user3 .paint-logo,
+  body .user-section .user3 .light-logo,
+  body .user-section .user3 .film-logo,
+  body .user-section-two .user1 .paint-logo,
+  body .user-section-two .user1 .light-logo,
+  body .user-section-two .user1 .film-logo,
+  body .user-section-two .user2 .paint-logo,
+  body .user-section-two .user2 .light-logo,
+  body .user-section-two .user2 .film-logo,
+  body .user-section-two .user3 .paint-logo,
+  body .user-section-two .user3 .light-logo,
+  body .user-section-two .user3 .film-logo,
+  body .user-section-three .user1 .paint-logo,
+  body .user-section-three .user1 .light-logo,
+  body .user-section-three .user1 .film-logo,
+  body .user-section-three .user2 .paint-logo,
+  body .user-section-three .user2 .light-logo,
+  body .user-section-three .user2 .film-logo,
+  body .user-section-three .user3 .paint-logo,
+  body .user-section-three .user3 .light-logo,
+  body .user-section-three .user3 .film-logo {
     padding-right: 10px;
   }
   body .promotion .promo-image .image {
@@ -1955,13 +2445,17 @@ footer .right-section ul a img {
     flex-direction: column;
     gap: 100px;
   }
-  body .promotion .promo-image .images .first, body .promotion .promo-image .images .second, body .promotion .promo-image .images .third {
+  body .promotion .promo-image .images .first,
+  body .promotion .promo-image .images .second,
+  body .promotion .promo-image .images .third {
     width: 80%;
     background-size: cover;
     height: 60vh;
     margin: 0 auto;
   }
-  body .promotion .promo-image .images .first p, body .promotion .promo-image .images .second p, body .promotion .promo-image .images .third p {
+  body .promotion .promo-image .images .first p,
+  body .promotion .promo-image .images .second p,
+  body .promotion .promo-image .images .third p {
     font-size: 16px;
     top: 60vh;
   }
@@ -1987,7 +2481,9 @@ footer .right-section ul a img {
   body .marketing .contents {
     flex-direction: column;
   }
-  body .marketing .contents .first-part-border, body .marketing .contents .second-part-border, body .marketing .contents .first-part {
+  body .marketing .contents .first-part-border,
+  body .marketing .contents .second-part-border,
+  body .marketing .contents .first-part {
     border-bottom: 1px dashed grey;
     border-right: unset;
   }
@@ -2243,13 +2739,17 @@ footer .right-section ul a img {
     flex-direction: column;
     gap: 100px;
   }
-  header .promotion .promo-image .images .first, header .promotion .promo-image .images .second, header .promotion .promo-image .images .third {
+  header .promotion .promo-image .images .first,
+  header .promotion .promo-image .images .second,
+  header .promotion .promo-image .images .third {
     width: 80%;
     background-size: cover;
     height: 60vh;
     margin: 0 auto;
   }
-  header .promotion .promo-image .images .first p, header .promotion .promo-image .images .second p, header .promotion .promo-image .images .third p {
+  header .promotion .promo-image .images .first p,
+  header .promotion .promo-image .images .second p,
+  header .promotion .promo-image .images .third p {
     font-size: 20px;
     top: 60vh;
   }
