@@ -977,6 +977,13 @@ footer .right-section ul a img {
   width: 20%;
 }
 
+@media (min-width: 1281px) and (max-width: 1440px) {
+  footer .right-section {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+  }
+}
 @media (min-width: 1051px) and (max-width: 1280px) {
   .user-section .user1,
   .user-section .user2,
@@ -1062,6 +1069,11 @@ footer .right-section ul a img {
   }
   .promotion p {
     font-size: 14px;
+  }
+  footer .right-section {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
   }
 }
 @media (min-width: 981px) and (max-width: 1051px) {
@@ -3043,5 +3055,10 @@ footer .right-section ul a img {
 @media (min-width: 1441px) {
   .promotion p {
     width: 90%;
+  }
+  footer .right-section {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
   }
 }/*# sourceMappingURL=style.css.map */

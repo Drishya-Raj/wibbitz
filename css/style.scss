@@ -1238,8 +1238,14 @@ footer {
 
 //Media queries
 @media (min-width:1281px) and (max-width:1440px) {
+	footer {
+		.right-section {
+			display: flex;
+			justify-content: space-between;
+			width: 60%;
 
-	//no changes needed
+		}
+	}
 
 }
 
@@ -1319,6 +1325,14 @@ footer {
 
 		p {
 			font-size: 14px;
+		}
+	}
+	footer {
+		.right-section {
+			display: flex;
+			justify-content: space-between;
+			width: 60%;
+
 		}
 	}
 }
@@ -1591,7 +1605,8 @@ footer {
 				h1 {
 					font-size: 28px;
 				}
-				.textbox{
+
+				.textbox {
 					margin: 0 auto;
 				}
 			}
@@ -2074,7 +2089,7 @@ footer {
 				.dotted-curve {
 					left: 120px;
 					top: -20px;
-				
+
 				}
 			}
 		}
@@ -3912,4 +3927,14 @@ footer {
 			width: 90%;
 		}
 	}
+
+	footer {
+		.right-section {
+			display: flex;
+			justify-content: space-between;
+			width: 60%;
+
+		}
+	}
+
 }
